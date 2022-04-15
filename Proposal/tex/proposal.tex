@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage[preprint]{neurips_2022}
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{xcolor}         % colors
+\bibliographystyle{plain}
+
+\title{Machine Learning - Final Project Proposal}
+
+\author{%
+  Isaac Wasserman\\
+  Department of Computer Science\\
+  Haverford College\\
+  Haverford, PA 19041\\
+  \texttt{iwasserman@haverford.edu} \\
+}
+
+\begin{document}
+
+  \maketitle
+
+  \section{Proposal}
+  For my final project, I will explore the use of generative adversarial networks (GANs) for data augmentation. Although GANs are most popularly used for domain transfer, the same basic architecture is also a good candidate for a data augmentation strategy called hallucination in which new (fake) training examples based on a small number of existing (real) examples. Though theoretically, the addition of these fake examples should not improve the performance of a discriminative model (since they can be no more representative of the true distribution than the examples they are based on), empirical studies have observed accuracy improvements on multi-class classification of up to 13\% on benchmark low-resource datasets such as Omniglot \cite{antoniou}. Data hallucination has been shown to improve performance, even without GANs; for example, randomized stem hallucination can improve the accuracy of morphological inflection models on low-resource languages by up to 76\% \cite{anastasopoulos-neubig-2019-pushing}. Surely, there is something to this strategy.
+
+  I will start by implementing a simple GAN for the hallucination of a simple image dataset like MNIST; this process will allow me to become familiar with the technique in a medium that I can easily interpret. I then plan to test GAN based hallucination on the morphological inflection model built by Anastasopoulos and Neubig, replacing their largely randomized method with one that better models the phonotactics of the language. The dataset they used was published as part of the SIGMORPHON 2018 shared task \cite{sigmorphon}, and it includes subsets for 58 language pairs\footnote{The Anastasopoulos and Neubig model was built to be trained first on a high-resource language and then fine-tuned for a low-resource language with similar genealogy or morphological features} and 91 individual languages.
+
+  Acknowledging the possibility that this may be more than I can accomplish in the given timeframe, I may end up needing to forgo the application of GAN hallucination to the inflection model and instead apply it to a simpler image classification task. In this case, I would first test traditional data augmentation methods and compare the effects to those of GAN hallucination.
+
+  \section{Timeline}
+    April 6th through April 15th:
+    \begin{itemize}
+      \item{Learn more about GANs}
+      \item{Learn more about data augmentation}
+    \end{itemize}
+    April 16th through May 1st:
+    \begin{itemize}
+      \item{Implement a simple GAN for fake MNIST example generation}
+      \item{Collect baseline and random hallucination accuracies for Anastasopoulos and Neubig model}
+    \end{itemize}
+    May 2nd through May 13th:
+    \begin{itemize}
+      \item{Implement GAN hallucinator to replace random hallucinator}
+      \item{Write report}
+    \end{itemize}
+  \bibliography{sources}
+
+\end{document}
