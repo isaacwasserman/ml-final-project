@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex proposal"] 1649203668 "proposal.aux" "proposal.bbl" "proposal" 1649203743
+["bibtex proposal"] 1650326700 "proposal.aux" "proposal.bbl" "proposal" 1650327155
   "/usr/local/texlive/2021/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "proposal.aux" 1649203743 1203 0f8afc28942ef9d0cad30541c299b249 "pdflatex"
-  "sources.bib" 1649201731 2448 6b7722fd0e72c3d95a79ad35ce61b515 ""
+  "proposal.aux" 1650327155 1823 0eedc1b2c6e5285fc5668c8beea49ec1 "pdflatex"
+  "sources.bib" 1650325175 9607 be7e6fe69f9cf5c07e87bafbe80b0b2b ""
   (generated)
   "proposal.bbl"
   "proposal.blg"
-["pdflatex"] 1649203743 "/Users/isaac/Desktop/Machine Learning/Final Project/Proposal/tex/proposal.tex" "proposal.pdf" "proposal" 1649203743
-  "/Users/isaac/Desktop/Machine Learning/Final Project/Proposal/tex/proposal.tex" 1649203743 3720 91bfd9672ebbc4bb12fe29ab5896ba1e ""
+["pdflatex"] 1650327155 "/Users/isaac/Desktop/Machine Learning/Final Project/Proposal/tex/proposal.tex" "proposal.pdf" "proposal" 1650327155
+  "/Users/isaac/Desktop/Machine Learning/Final Project/Proposal/tex/proposal.tex" 1650327154 7058 c22ee5ae197cefa75d8f0b39f435edda ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -108,10 +108,10 @@
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1642729323 2796592 00dc472a5dac70e144a006775cbbe283 ""
   "/usr/local/texlive/2021/texmf.cnf" 1642729278 577 4c1911a7228e554c6032256d3cf5567d ""
   "neurips_2022.sty" 1649201906 11555 3bcd8a147ee27f39e8bc3cda450b9118 ""
-  "proposal.aux" 1649203743 1203 0f8afc28942ef9d0cad30541c299b249 "pdflatex"
-  "proposal.bbl" 1649203668 763 2419fb2d059c69f88759f0a2e4b9ed1f "bibtex proposal"
-  "proposal.out" 1649203743 166 b29751aa3203f5f261102cd125b2188f "pdflatex"
-  "proposal.tex" 1649203743 3720 91bfd9672ebbc4bb12fe29ab5896ba1e ""
+  "proposal.aux" 1650327155 1823 0eedc1b2c6e5285fc5668c8beea49ec1 "pdflatex"
+  "proposal.bbl" 1650326700 2824 f2ee1075ab58be3b9e0eac0e57a27cff "bibtex proposal"
+  "proposal.out" 1650327155 272 bb5bd1ebeac8822bb2f075ed5a253b8b "pdflatex"
+  "proposal.tex" 1650327154 7058 c22ee5ae197cefa75d8f0b39f435edda ""
   (generated)
   "proposal.aux"
   "proposal.log"

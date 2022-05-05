@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{anastasopoulos-neubig-2019-pushing}
 Antonios Anastasopoulos and Graham Neubig.
@@ -12,9 +12,62 @@ Antonios Anastasopoulos and Graham Neubig.
 Antreas Antoniou, Amos Storkey, and Harrison Edwards.
 \newblock Data augmentation generative adversarial networks, 2017.
 
+\bibitem{gupta}
+Rahul Gupta.
+\newblock Data augmentation for low resource sentiment analysis using
+  generative adversarial networks.
+\newblock {\em CoRR}, abs/1902.06818, 2019.
+
+\bibitem{pix2pix}
+Phillip Isola, Jun{-}Yan Zhu, Tinghui Zhou, and Alexei~A. Efros.
+\newblock Image-to-image translation with conditional adversarial networks.
+\newblock {\em CoRR}, abs/1611.07004, 2016.
+
+\bibitem{fewshot}
+Shruti Jadon.
+\newblock An overview of deep learning architectures in few-shot learning
+  domain.
+\newblock 2020.
+
+\bibitem{twin-networks}
+Gregory Koch, Richard Zemel, and Ruslan Salakhutdinov.
+\newblock Siamese neural networks for one-shot image recognition.
+\newblock \url{https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf}, 2015.
+
+\bibitem{sandfort}
+Veit Sandfort, Ke~Yan, Perry~J. Pickhardt, and Ronald~M. Summers.
+\newblock Data augmentation using generative adversarial networks (cyclegan) to
+  improve generalizability in ct segmentation tasks.
+\newblock {\em Scientific Reports}, 9(1):16884, Nov 2019.
+
+\bibitem{shin}
+Hoo-Chang Shin, Neil~A Tenenholtz, Jameson~K Rogers, Christopher~G Schwarz,
+  Matthew~L Senjem, Jeffrey~L Gunter, Katherine~P Andriole, and Mark Michalski.
+\newblock Medical image synthesis for data augmentation and anonymization using
+  generative adversarial networks.
+\newblock In {\em Simulation and Synthesis in Medical Imaging}, Lecture Notes
+  in Computer Science, pages 1--11. Springer International Publishing, Cham,
+  2018.
+
 \bibitem{sigmorphon}
 SIGMORPHON.
 \newblock conll2018.
 \newblock \url{https://github.com/sigmorphon/conll2018}, 2018.
+
+\bibitem{matching-networks}
+Oriol Vinyals, Charles Blundell, Timothy Lillicrap, Koray Kavukcuoglu, and Daan
+  Wierstra.
+\newblock Matching networks for one shot learning, 2016.
+
+\bibitem{wang}
+Guotai Wang, Wenqi Li, S{\'{e}}bastien Ourselin, and Tom Vercauteren.
+\newblock Automatic brain tumor segmentation using cascaded anisotropic
+  convolutional neural networks.
+\newblock {\em CoRR}, abs/1709.00382, 2017.
+
+\bibitem{cyclegan}
+Jun-Yan Zhu, Taesung Park, Phillip Isola, and Alexei~A. Efros.
+\newblock Unpaired image-to-image translation using cycle-consistent
+  adversarial networks, 2017.
 
 \end{thebibliography}
