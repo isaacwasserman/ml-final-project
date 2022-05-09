@@ -18,7 +18,7 @@ from sklearn.model_selection import train_test_split
 parser = argparse.ArgumentParser()
 parser.add_argument("datapath", help="path to data", type=str)
 parser.add_argument("language", help="language", type=str)
-parser.add_argument("epoch", help="which model epoch to use", type=str, default=1500)
+parser.add_argument("--epoch", help="which model epoch to use", type=str, default=1500, required=False)
 parser.add_argument("--examples", help="number of hallucinated examples to create (def: 10000)", default=10000, type=int)
 parser.add_argument("--use_dev", help="whether to use the development set (def: False)", action="store_true")
 args = parser.parse_args()
@@ -279,10 +279,9 @@ def create_single_language_stem_dataset(language, hilo="high"):
     X,lut = one_hot_encode_sequence(reference_stems, combined_vocab)
     labels = np.array([1] * len(reference_stems))
     X_train, X_test, y_train, y_test = train_test_split(X, labels, test_size=0.001)
-    return X_train, X_test, y_train, y_test, combined_vocab, lut
+    return ["".join(stem).replace("0","") for stem in reference_stems]
 
 language = L2
-X_train, X_test, y_train, y_test, X_vocab, lut = create_single_language_stem_dataset(language, hilo="low")
 
 
 
@@ -294,23 +293,20 @@ def wasserstein_loss(y_true, y_pred):
     y_pred_adjusted = tf.math.subtract(tf.math.multiply(y_pred, 2), 1)
     return backend.mean(y_true_adjusted * y_pred_adjusted)
 
-hallucinator = keras.models.load_model(f'checkpoints/{language}-epoch-{model_epoch}.h5',custom_objects={"wasserstein_loss":wasserstein_loss})
-generator = keras.models.Sequential([hallucinator.layers[0]])
-generator.build(input_shape=[1,10,32])
-generator.summary()
-def hallucinate_stem(original):
-	seq = "".join([lut[np.argmax(onehot)] for onehot in distribution_to_sequence(generator(tf.random.normal(shape=[1,10,32]))[0])])
-	if "0" in seq:
-		seq = seq[:seq.index("0")]
-	# remove reduplication
-	new_seq = ""
-	for i,char in enumerate(seq):
-		if seq[i] != seq[i-1] and seq[i] != "0":
-			new_seq = new_seq + char
-	if len(original) < len(new_seq):
-		new_seq = new_seq[:len(original)]
+import nltk
+from nltk.lm.preprocessing import padded_everygram_pipeline
 
-	return new_seq
+X = create_single_language_stem_dataset(language, hilo="low")
+n = 3
+model = nltk.lm.MLE(n)
+train, vocab = padded_everygram_pipeline(n, X)
+model.fit(train, vocab)
+
+def hallucinate_stem(original):
+    gen = model.generate(10)
+    while "".join([char for char in gen if char != "<s>" and char != "</s>"]) == "":
+        gen = model.generate(10)
+    return "".join([char for char in gen if char != "<s>" and char != "</s>"])
 
 def augment(inputs, outputs, tags, characters, language):
 	temp = [(''.join(inputs[i]), ''.join(outputs[i])) for i in range(len(outputs))]
@@ -388,6 +384,6 @@ i = [c for c in i if c]
 o = [c for c in o if c]
 t = [c for c in t if c]
 
-with codecs.open(os.path.join(DATA_PATH,L2+"-hall"), 'w', 'utf-8') as outp:
+with codecs.open(os.path.join(DATA_PATH,L2+"-hall-ngram"), 'w', 'utf-8') as outp:
 	for k in range(min(N, len(i))):
 		outp.write(''.join(i[k]) + '\t' + ''.join(o[k]) + '\t' + ';'.join(t[k]) + '\n')
