@@ -14,6 +14,7 @@ import glob
 from keras.preprocessing import sequence
 from IPython.utils import io
 from sklearn.model_selection import train_test_split
+from alive_progress import alive_bar
 
 parser = argparse.ArgumentParser()
 parser.add_argument("datapath", help="path to data", type=str)
@@ -376,21 +377,24 @@ devi, devo, devt = read_data(DEV_PATH)
 vocab = get_chars(lowi+lowo+devi+devo)
 
 i,o,t = [], [], []
-while len(i) < N:
-	if usedev:
-		# Do augmentation also using examples from dev
-		ii,oo,tt = augment(devi+lowi, devo+lowo, devt+lowt, vocab, L2)
-	else:
-		# Just augment the training set
-		ii,oo,tt = augment(lowi, lowo, lowt, vocab, L2)
-	ii = [c for c in ii if c]
-	oo = [c for c in oo if c]
-	tt = [c for c in tt if c]
-	i += ii
-	o += oo
-	t += tt
-	if len(ii) == 0:
-		break
+
+with alive_bar(N // len(lowi), title="Smart augmentation:") as bar:
+    for k in range(N // len(lowi)):
+        if usedev:
+            # Do augmentation also using examples from dev
+            ii,oo,tt = augment(devi+lowi, devo+lowo, devt+lowt, vocab, L2)
+        else:
+            # Just augment the training set
+            ii,oo,tt = augment(lowi, lowo, lowt, vocab, L2)
+        ii = [c for c in ii if c]
+        oo = [c for c in oo if c]
+        tt = [c for c in tt if c]
+        i += ii
+        o += oo
+        t += tt
+        if len(ii) == 0:
+            break
+        bar()
 
 # Wait is this needed?
 i = [c for c in i if c]

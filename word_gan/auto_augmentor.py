@@ -2,7 +2,7 @@ import os
 
 languages = ["azeri","bengali","crimean-tatar","ingrian","karelian","kashubian","livonian","maltese","middle-high-german","north-frisian","occitan","old-church-slavonic","pashto","tatar"]
 languages = ["maltese","middle-high-german","north-frisian","occitan","old-church-slavonic","pashto","tatar"]
-languages = ["livonian"]
+languages = ["ingrian"]
 for language in languages:
     print(f'Working on {language}, regular')
     os.system(f'python augment_regular.py sigmorphon_data {language} --examples 10000')
