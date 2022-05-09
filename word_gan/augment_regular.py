@@ -25,7 +25,7 @@ def find_good_range(a,b):
 	mask = [(a[i]==b[i] and a[i] != u" ") for i in range(len(a))]
 	if sum(mask) == 0:
 		# Some times the alignment is off-by-one
-		b = ' ' + b
+		b = [' '] + b
 		mask = [(a[i]==b[i] and a[i] != u" ") for i in range(len(a))]
 	ranges = []
 	prev = False
