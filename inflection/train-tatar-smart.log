@@ -1,0 +1,221 @@
+[dynet] random seed: 4214892139
+[dynet] allocating memory: 512MB
+[dynet] memory allocation done.
+Data lengths
+transfer-language 0 0 0
+test-language 10100 10100 10100
+dev 100 100 100
+test 100 100
+Characters: ['z', 't', 'c', ' ', 'n', 'g', 'R', 'â', 'd', 'ñ', 'ğ', 'k', 'ä', 'b', 'r', 'i', 'İ', 'e', 'p', 'a', 'v', 'ö', 'ş', 'm', 's', 'q', 'o', 'u', 'ü', 'y', 'h', 'f', 'l', '-', 'ı', 'ç', 'j', '<EOS>']
+Vocab size: 38
+All tags: ['SG', 'PST', 'GEN', 'LOC', '3', 'IMP', '2', 'PRS', 'DAT', 'NFIN', 'ABL', 'ACC', 'ADJ', 'NOM', 'N', 'V', '<NULL>']
+Tag vocab size: 17
+[lr=0.1 clips=1421 updates=2020] on 0: Epoch 0 : 16216.79337451607
+on 0: 	 COPY Accuracy: 0.86 average edit distance: 0.38
+[lr=0.1 clips=465 updates=2020] on 1: Epoch 1 : 645.7766718287021
+on 1: 	 COPY Accuracy: 0.86 average edit distance: 0.35
+[lr=0.1 clips=169 updates=2020] on 2: Epoch 2 : 244.86983622261323
+on 2: 	 COPY Accuracy: 0.91 average edit distance: 0.2
+on 2: Accuracy good enough, breaking
+Burning in tatar: |▊⚠︎                                      | (!) 2/100 [2%] in 2:07.4 (0.02/s) 
+[lr=0.1 clips=11934 updates=14199] on 0: Epoch  0  :  272496.52557306236
+on 0: 	 COPY Accuracy:  0.7  average edit distance:  0.4
+on 0: 	 TASK Accuracy:  0.01  average edit distance:  7.22
+[lr=0.1 clips=9935 updates=14122] on 1: Epoch  1  :  251426.13869067855
+on 1: 	 COPY Accuracy:  0.7  average edit distance:  0.45
+on 1: 	 TASK Accuracy:  0.01  average edit distance:  6.8
+[lr=0.1 clips=9195 updates=14172] on 2: Epoch  2  :  246821.55140987324
+on 2: 	 COPY Accuracy:  0.8  average edit distance:  0.7
+on 2: 	 TASK Accuracy:  0.01  average edit distance:  7.23
+[lr=0.1 clips=8624 updates=14150] on 3: Epoch  3  :  245377.3482820174
+on 3: 	 COPY Accuracy:  0.75  average edit distance:  1.4
+on 3: 	 TASK Accuracy:  0.01  average edit distance:  7.45
+[lr=0.1 clips=7547 updates=14185] on 4: Epoch  4  :  243176.76138466134
+on 4: 	 COPY Accuracy:  0.75  average edit distance:  0.75
+on 4: 	 TASK Accuracy:  0.01  average edit distance:  6.8
+[lr=0.1 clips=8526 updates=14194] on 5: Epoch  5  :  242135.6178025325
+on 5: 	 COPY Accuracy:  0.8  average edit distance:  0.85
+on 5: 	 TASK Accuracy:  0.01  average edit distance:  7.24
+[lr=0.1 clips=7735 updates=14218] on 6: Epoch  6  :  241251.5017559448
+on 6: 	 COPY Accuracy:  0.8  average edit distance:  0.25
+on 6: 	 TASK Accuracy:  0.01  average edit distance:  7.05
+[lr=0.1 clips=8045 updates=14077] on 7: Epoch  7  :  241544.65939492296
+on 7: 	 COPY Accuracy:  0.75  average edit distance:  0.55
+on 7: 	 TASK Accuracy:  0.01  average edit distance:  6.49
+[lr=0.1 clips=8204 updates=13991] on 8: Epoch  8  :  245450.3953811844
+on 8: 	 COPY Accuracy:  0.0  average edit distance:  6.2
+on 8: 	 TASK Accuracy:  0.0  average edit distance:  7.58
+[lr=0.1 clips=11634 updates=14107] on 9: Epoch  9  :  288839.43559718586
+on 9: 	 COPY Accuracy:  0.65  average edit distance:  0.75
+on 9: 	 TASK Accuracy:  0.01  average edit distance:  6.3
+[lr=0.1 clips=8656 updates=14174] on 10: Epoch  10  :  244440.73441433822
+on 10: 	 COPY Accuracy:  0.85  average edit distance:  0.4
+on 10: 	 TASK Accuracy:  0.0  average edit distance:  6.73
+[lr=0.1 clips=8221 updates=14105] on 11: Epoch  11  :  241410.3154161808
+on 11: 	 COPY Accuracy:  0.65  average edit distance:  1.25
+on 11: 	 TASK Accuracy:  0.01  average edit distance:  6.61
+[lr=0.1 clips=8008 updates=14118] on 12: Epoch  12  :  239937.0338134296
+on 12: 	 COPY Accuracy:  1.0  average edit distance:  0.0
+on 12: 	 TASK Accuracy:  0.01  average edit distance:  6.54
+[lr=0.1 clips=8664 updates=14110] on 13: Epoch  13  :  242770.246689529
+on 13: 	 COPY Accuracy:  0.75  average edit distance:  1.1
+on 13: 	 TASK Accuracy:  0.01  average edit distance:  7.2
+[lr=0.1 clips=8460 updates=14152] on 14: Epoch  14  :  242330.27890170488
+on 14: 	 COPY Accuracy:  0.85  average edit distance:  0.8
+on 14: 	 TASK Accuracy:  0.01  average edit distance:  6.95
+[lr=0.1 clips=8598 updates=14040] on 15: Epoch  15  :  243154.43054748702
+on 15: 	 COPY Accuracy:  0.9  average edit distance:  0.25
+on 15: 	 TASK Accuracy:  0.02  average edit distance:  7.04
+[lr=0.1 clips=8755 updates=14032] on 16: Epoch  16  :  243048.83674228616
+on 16: 	 COPY Accuracy:  0.8  average edit distance:  0.55
+on 16: 	 TASK Accuracy:  0.02  average edit distance:  6.66
+[lr=0.1 clips=9001 updates=14124] on 17: Epoch  17  :  242686.37626999008
+on 17: 	 COPY Accuracy:  0.75  average edit distance:  0.6
+on 17: 	 TASK Accuracy:  0.01  average edit distance:  7.02
+[lr=0.1 clips=9342 updates=14201] on 18: Epoch  18  :  245108.61298646068
+on 18: 	 COPY Accuracy:  0.85  average edit distance:  0.2
+on 18: 	 TASK Accuracy:  0.01  average edit distance:  7.07
+[lr=0.1 clips=9193 updates=14147] on 19: Epoch  19  :  243390.69739764612
+on 19: 	 COPY Accuracy:  0.85  average edit distance:  0.6
+on 19: 	 TASK Accuracy:  0.01  average edit distance:  7.31
+[lr=0.1 clips=10279 updates=14111] on 20: Epoch  20  :  272543.4837559026
+on 20: 	 COPY Accuracy:  0.0  average edit distance:  6.05
+on 20: 	 TASK Accuracy:  0.0  average edit distance:  7.71
+[lr=0.1 clips=12405 updates=14041] on 21: Epoch  21  :  317560.7467894554
+on 21: 	 COPY Accuracy:  0.0  average edit distance:  6.25
+on 21: 	 TASK Accuracy:  0.0  average edit distance:  7.63
+[lr=0.1 clips=12520 updates=14107] on 22: Epoch  22  :  310819.0824815929
+on 22: 	 COPY Accuracy:  0.0  average edit distance:  4.5
+on 22: 	 TASK Accuracy:  0.0  average edit distance:  7.72
+on 22: Restarting the trainer with half the learning rate!
+[lr=0.05 clips=8269 updates=14089] on 23: Epoch  23  :  235779.95162612264
+on 23: 	 COPY Accuracy:  0.7  average edit distance:  1.3
+on 23: 	 TASK Accuracy:  0.01  average edit distance:  6.28
+[lr=0.05 clips=8666 updates=14016] on 24: Epoch  24  :  232467.74425478588
+on 24: 	 COPY Accuracy:  0.8  average edit distance:  0.6
+on 24: 	 TASK Accuracy:  0.01  average edit distance:  6.71
+[lr=0.05 clips=9135 updates=14162] on 25: Epoch  25  :  232295.1179180111
+on 25: 	 COPY Accuracy:  0.7  average edit distance:  0.9
+on 25: 	 TASK Accuracy:  0.03  average edit distance:  6.16
+[lr=0.05 clips=9503 updates=14078] on 26: Epoch  26  :  230654.21810528077
+on 26: 	 COPY Accuracy:  0.75  average edit distance:  0.55
+on 26: 	 TASK Accuracy:  0.01  average edit distance:  6.28
+[lr=0.05 clips=9867 updates=14149] on 27: Epoch  27  :  230916.84901298574
+on 27: 	 COPY Accuracy:  0.85  average edit distance:  0.55
+on 27: 	 TASK Accuracy:  0.02  average edit distance:  5.86
+[lr=0.05 clips=10221 updates=14118] on 28: Epoch  28  :  229688.95075025872
+on 28: 	 COPY Accuracy:  0.8  average edit distance:  0.35
+on 28: 	 TASK Accuracy:  0.01  average edit distance:  6.23
+[lr=0.05 clips=10380 updates=14126] on 29: Epoch  29  :  228714.0433801003
+on 29: 	 COPY Accuracy:  0.7  average edit distance:  0.5
+on 29: 	 TASK Accuracy:  0.03  average edit distance:  6.15
+[lr=0.05 clips=10555 updates=14174] on 30: Epoch  30  :  229227.40345255495
+on 30: 	 COPY Accuracy:  0.8  average edit distance:  0.7
+on 30: 	 TASK Accuracy:  0.02  average edit distance:  6.38
+[lr=0.05 clips=10709 updates=14111] on 31: Epoch  31  :  228800.47283552412
+on 31: 	 COPY Accuracy:  0.9  average edit distance:  0.25
+on 31: 	 TASK Accuracy:  0.01  average edit distance:  6.11
+[lr=0.05 clips=10788 updates=14128] on 32: Epoch  32  :  227141.27093666315
+on 32: 	 COPY Accuracy:  0.95  average edit distance:  0.15
+on 32: 	 TASK Accuracy:  0.02  average edit distance:  6.09
+on 32: Restarting the trainer with half the learning rate!
+Pretraining tatar: |████████████████████████████████⚠︎       | (!) 32/40 [80%] in 19:25.4 (0.03/s) 
+Best dev accuracy after pre-training:  0.03
+Best dev lev distance after pre-training:  5.86
+on 0: Epoch  0  :  252312.38071172195
+[lr=0.1 clips=10460 updates=12126] on 0: 	 COPY Accuracy:  0.75  average edit distance:  1.0
+on 0: 	 TASK Accuracy:  0.02  average edit distance:  5.84
+on 1: Epoch  1  :  252547.79105563374
+[lr=0.1 clips=10229 updates=12076] on 1: 	 COPY Accuracy:  0.65  average edit distance:  1.5
+on 1: 	 TASK Accuracy:  0.0  average edit distance:  6.68
+on 2: Epoch  2  :  259878.95227807114
+[lr=0.1 clips=10263 updates=12142] on 2: 	 COPY Accuracy:  0.5  average edit distance:  1.3
+on 2: 	 TASK Accuracy:  0.01  average edit distance:  6.52
+on 3: Epoch  3  :  256878.22761402902
+[lr=0.1 clips=9848 updates=12139] on 3: 	 COPY Accuracy:  0.8  average edit distance:  0.35
+on 3: 	 TASK Accuracy:  0.01  average edit distance:  7.0
+on 4: Epoch  4  :  256888.55181454078
+[lr=0.1 clips=9792 updates=12148] on 4: 	 COPY Accuracy:  0.55  average edit distance:  0.95
+on 4: 	 TASK Accuracy:  0.01  average edit distance:  7.54
+on 5: Epoch  5  :  255474.85608471493
+[lr=0.1 clips=9580 updates=12108] on 5: 	 COPY Accuracy:  0.7  average edit distance:  0.55
+on 5: 	 TASK Accuracy:  0.01  average edit distance:  6.39
+on 6: Epoch  6  :  266425.7528690311
+[lr=0.1 clips=10229 updates=12079] on 6: 	 COPY Accuracy:  0.0  average edit distance:  6.7
+on 6: 	 TASK Accuracy:  0.0  average edit distance:  7.68
+on 6: Restarting the trainer with half the learning rate!
+on 7: Epoch  7  :  247040.45039814326
+[lr=0.05 clips=9068 updates=12131] on 7: 	 COPY Accuracy:  0.75  average edit distance:  0.8
+on 7: 	 TASK Accuracy:  0.01  average edit distance:  6.45
+on 8: Epoch  8  :  245582.10553289566
+[lr=0.05 clips=9198 updates=12099] on 8: 	 COPY Accuracy:  0.75  average edit distance:  0.9
+on 8: 	 TASK Accuracy:  0.03  average edit distance:  6.49
+on 9: Epoch  9  :  244059.10587705966
+[lr=0.05 clips=9483 updates=12097] on 9: 	 COPY Accuracy:  0.85  average edit distance:  0.4
+on 9: 	 TASK Accuracy:  0.01  average edit distance:  5.97
+on 10: Epoch  10  :  243456.33907042505
+[lr=0.05 clips=9713 updates=12094] on 10: 	 COPY Accuracy:  0.95  average edit distance:  0.05
+on 10: 	 TASK Accuracy:  0.03  average edit distance:  5.96
+on 11: Epoch  11  :  243499.09039146957
+[lr=0.05 clips=10036 updates=12138] on 11: 	 COPY Accuracy:  0.9  average edit distance:  0.5
+on 11: 	 TASK Accuracy:  0.01  average edit distance:  5.78
+on 12: Epoch  12  :  242498.72837902082
+[lr=0.05 clips=10163 updates=12080] on 12: 	 COPY Accuracy:  0.7  average edit distance:  0.85
+on 12: 	 TASK Accuracy:  0.01  average edit distance:  5.7
+on 13: Epoch  13  :  242757.23027317366
+[lr=0.05 clips=10471 updates=12165] on 13: 	 COPY Accuracy:  0.75  average edit distance:  1.35
+on 13: 	 TASK Accuracy:  0.02  average edit distance:  5.52
+on 13: Restarting the trainer with half the learning rate!
+Finetuning (1) tatar: |█████████████⚠︎                          | (!) 13/40 [32%] in 6:51.3 (0.03/s) 
+on 0: Epoch  0  :  230874.0132922777
+[lr=0.05 clips=9713 updates=10100] on 0: 	 COPY Accuracy:  0.85  average edit distance:  0.45
+on 0: 	 TASK Accuracy:  0.01  average edit distance:  6.68
+on 0: Restarting the trainer with half the learning rate!
+on 1: Epoch  1  :  234115.3668148229
+[lr=0.025 clips=8009 updates=10100] on 1: 	 COPY Accuracy:  0.7  average edit distance:  0.75
+on 1: 	 TASK Accuracy:  0.0  average edit distance:  6.78
+on 2: Epoch  2  :  232184.59786579013
+[lr=0.025 clips=8269 updates=10100] on 2: 	 COPY Accuracy:  0.7  average edit distance:  1.35
+on 2: 	 TASK Accuracy:  0.0  average edit distance:  6.67
+on 3: Epoch  3  :  231135.5213467367
+[lr=0.025 clips=8750 updates=10100] on 3: 	 COPY Accuracy:  0.9  average edit distance:  0.1
+on 3: 	 TASK Accuracy:  0.0  average edit distance:  6.61
+on 4: Epoch  4  :  230215.48621464893
+[lr=0.025 clips=9038 updates=10100] on 4: 	 COPY Accuracy:  0.8  average edit distance:  0.7
+on 4: 	 TASK Accuracy:  0.0  average edit distance:  6.57
+on 5: Epoch  5  :  229732.5693188738
+[lr=0.025 clips=9384 updates=10100] on 5: 	 COPY Accuracy:  0.85  average edit distance:  0.85
+on 5: 	 TASK Accuracy:  0.0  average edit distance:  6.61
+on 6: Epoch  6  :  229165.2664468889
+[lr=0.025 clips=9560 updates=10100] on 6: 	 COPY Accuracy:  0.85  average edit distance:  0.4
+on 6: 	 TASK Accuracy:  0.0  average edit distance:  6.49
+on 7: Epoch  7  :  228372.5962421447
+[lr=0.025 clips=9770 updates=10100] on 7: 	 COPY Accuracy:  0.75  average edit distance:  1.25
+on 7: 	 TASK Accuracy:  0.0  average edit distance:  6.4
+on 7: Restarting the trainer with half the learning rate!
+on 8: Epoch  8  :  233964.9511638377
+[lr=0.0125 clips=8114 updates=10100] on 8: 	 COPY Accuracy:  0.75  average edit distance:  0.95
+on 8: 	 TASK Accuracy:  0.0  average edit distance:  6.48
+on 9: Epoch  9  :  232074.76059795404
+[lr=0.0125 clips=8202 updates=10100] on 9: 	 COPY Accuracy:  0.65  average edit distance:  1.5
+on 9: 	 TASK Accuracy:  0.0  average edit distance:  6.75
+on 10: Epoch  10  :  231468.43685708568
+[lr=0.0125 clips=8407 updates=10100] on 10: 	 COPY Accuracy:  0.95  average edit distance:  0.15
+on 10: 	 TASK Accuracy:  0.0  average edit distance:  6.83
+on 11: Epoch  11  :  229942.52629153244
+[lr=0.0125 clips=8768 updates=10100] on 11: 	 COPY Accuracy:  0.9  average edit distance:  0.15
+on 11: 	 TASK Accuracy:  0.0  average edit distance:  6.76
+on 12: Epoch  12  :  230024.9310301356
+[lr=0.0125 clips=9108 updates=10100] on 12: 	 COPY Accuracy:  0.85  average edit distance:  0.5
+on 12: 	 TASK Accuracy:  0.0  average edit distance:  6.73
+on 13: Epoch  13  :  229544.6342660319
+[lr=0.0125 clips=9363 updates=10100] on 13: 	 COPY Accuracy:  0.6  average edit distance:  1.4
+on 13: 	 TASK Accuracy:  0.0  average edit distance:  6.69
+on 14: Epoch  14  :  229191.14693890885
+[lr=0.0125 clips=9482 updates=10100] on 14: 	 COPY Accuracy:  0.75  average edit distance:  1.35
+on 14: 	 TASK Accuracy:  0.0  average edit distance:  6.62
+on 14: Restarting the trainer with half the learning rate!
+Finetuning (2) tatar: |██████████████⚠︎                         | (!) 14/40 [35%] in 6:13.9 (0.04/s) 
+Best dev accuracy after finetuning:  0.03
+Best dev lev distance after finetuning:  5.52
+Training time: 2078.0990557670593 seconds
