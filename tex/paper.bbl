@@ -12,6 +12,10 @@ Antonios Anastasopoulos and Graham Neubig.
 Antreas Antoniou, Amos Storkey, and Harrison Edwards.
 \newblock Data augmentation generative adversarial networks, 2017.
 
+\bibitem{wgan}
+Martin Arjovsky, Soumith Chintala, and Léon Bottou.
+\newblock Wasserstein gan, 2017.
+
 \bibitem{rcgan}
 Cristóbal Esteban, Stephanie~L. Hyland, and Gunnar Rätsch.
 \newblock Real-valued (medical) time series generation with recurrent
@@ -22,6 +26,11 @@ Rahul Gupta.
 \newblock Data augmentation for low resource sentiment analysis using
   generative adversarial networks.
 \newblock {\em CoRR}, abs/1902.06818, 2019.
+
+\bibitem{crpalign}
+Mans Hulden.
+\newblock crpalign.
+\newblock \url{https://github.com/mhulden/crpalign}, 2022.
 
 \bibitem{pix2pix}
 Phillip Isola, Jun{-}Yan Zhu, Tinghui Zhou, and Alexei~A. Efros.
