@@ -1,0 +1,94 @@
+\begin{thebibliography}{10}
+
+\bibitem{CMU}
+Antonios Anastasopoulos and Graham Neubig.
+\newblock Pushing the limits of low-resource morphological inflection.
+\newblock In {\em Proceedings of the 2019 Conference on Empirical Methods in
+  Natural Language Processing and the 9th International Joint Conference on
+  Natural Language Processing (EMNLP-IJCNLP)}, pages 984--996, Hong Kong,
+  China, November 2019. Association for Computational Linguistics.
+
+\bibitem{antoniou}
+Antreas Antoniou, Amos Storkey, and Harrison Edwards.
+\newblock Data augmentation generative adversarial networks, 2017.
+
+\bibitem{wgan}
+Martin Arjovsky, Soumith Chintala, and Léon Bottou.
+\newblock Wasserstein gan, 2017.
+
+\bibitem{rcgan}
+Cristóbal Esteban, Stephanie~L. Hyland, and Gunnar Rätsch.
+\newblock Real-valued (medical) time series generation with recurrent
+  conditional gans, 2017.
+
+\bibitem{gupta}
+Rahul Gupta.
+\newblock Data augmentation for low resource sentiment analysis using
+  generative adversarial networks.
+\newblock {\em CoRR}, abs/1902.06818, 2019.
+
+\bibitem{crpalign}
+Mans Hulden.
+\newblock crpalign.
+\newblock \url{https://github.com/mhulden/crpalign}, 2022.
+
+\bibitem{pix2pix}
+Phillip Isola, Jun{-}Yan Zhu, Tinghui Zhou, and Alexei~A. Efros.
+\newblock Image-to-image translation with conditional adversarial networks.
+\newblock {\em CoRR}, abs/1611.07004, 2016.
+
+\bibitem{stylegan}
+Tero Karras, Samuli Laine, and Timo Aila.
+\newblock A style-based generator architecture for generative adversarial
+  networks.
+\newblock {\em CoRR}, abs/1812.04948, 2018.
+
+\bibitem{discogan}
+Taeksoo Kim, Moonsu Cha, Hyunsoo Kim, Jung~Kwon Lee, and Jiwon Kim.
+\newblock Learning to discover cross-domain relations with generative
+  adversarial networks.
+\newblock {\em CoRR}, abs/1703.05192, 2017.
+
+\bibitem{sigmorphon2019}
+Arya~D. McCarthy, Ekaterina Vylomova, Shijie Wu, Chaitanya Malaviya, Lawrence
+  Wolf-Sonkin, Garrett Nicolai, Christo Kirov, Miikka Silfverberg, Sabrina~J.
+  Mielke, Jeffrey Heinz, Ryan Cotterell, and Mans Hulden.
+\newblock The {SIGMORPHON} 2019 shared task: Morphological analysis in context
+  and cross-lingual transfer for inflection.
+\newblock In {\em Proceedings of the 16th Workshop on Computational Research in
+  Phonetics, Phonology, and Morphology}, pages 229--244, Florence, Italy,
+  August 2019. Association for Computational Linguistics.
+
+\bibitem{sandfort}
+Veit Sandfort, Ke~Yan, Perry~J. Pickhardt, and Ronald~M. Summers.
+\newblock Data augmentation using generative adversarial networks (cyclegan) to
+  improve generalizability in ct segmentation tasks.
+\newblock {\em Scientific Reports}, 9(1):16884, Nov 2019.
+
+\bibitem{shin}
+Hoo-Chang Shin, Neil~A Tenenholtz, Jameson~K Rogers, Christopher~G Schwarz,
+  Matthew~L Senjem, Jeffrey~L Gunter, Katherine~P Andriole, and Mark Michalski.
+\newblock Medical image synthesis for data augmentation and anonymization using
+  generative adversarial networks.
+\newblock In {\em Simulation and Synthesis in Medical Imaging}, Lecture Notes
+  in Computer Science, pages 1--11. Springer International Publishing, Cham,
+  2018.
+
+\bibitem{wang}
+Guotai Wang, Wenqi Li, S{\'{e}}bastien Ourselin, and Tom Vercauteren.
+\newblock Automatic brain tumor segmentation using cascaded anisotropic
+  convolutional neural networks.
+\newblock {\em CoRR}, abs/1709.00382, 2017.
+
+\bibitem{seqgan}
+Lantao Yu, Weinan Zhang, Jun Wang, and Yong Yu.
+\newblock Seqgan: Sequence generative adversarial nets with policy gradient.
+\newblock {\em CoRR}, abs/1609.05473, 2016.
+
+\bibitem{cyclegan}
+Jun{-}Yan Zhu, Taesung Park, Phillip Isola, and Alexei~A. Efros.
+\newblock Unpaired image-to-image translation using cycle-consistent
+  adversarial networks.
+\newblock {\em CoRR}, abs/1703.10593, 2017.
+
+\end{thebibliography}
