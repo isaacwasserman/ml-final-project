@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex paper"] 1652228491 "paper.aux" "paper.bbl" "paper" 1652228528
+["bibtex paper"] 1652295921 "paper.aux" "paper.bbl" "paper" 1652296237
   "/usr/local/texlive/2021/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "paper.aux" 1652228527 4987 5aa163789ace042d799bab9bde6cfb88 "pdflatex"
+  "paper.aux" 1652296237 5367 b3ea0a463b7654a9dcad3ef85fd2b089 "pdflatex"
   "sources.bib" 1652141515 13795 32bb01ec36a0612da1ecff9c081e13ce ""
   (generated)
   "paper.bbl"
   "paper.blg"
-["pdflatex"] 1652228527 "/Users/isaac/Desktop/Machine Learning/Final Project/tex/paper.tex" "paper.pdf" "paper" 1652228528
-  "/Users/isaac/Desktop/Machine Learning/Final Project/tex/paper.tex" 1652228527 19883 8017ad0c655751afaa90310c0d655d28 ""
+["pdflatex"] 1652296237 "/Users/isaac/Desktop/Machine Learning/Final Project/tex/paper.tex" "paper.pdf" "paper" 1652296237
+  "/Users/isaac/Desktop/Machine Learning/Final Project/tex/paper.tex" 1652296236 23862 762d31cf8aeb4283d18e433c0308606b ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -128,10 +128,10 @@
   "loss_plots/azeri.pdf" 1652224966 43568 3e99abb39af26ed1284e8dbc9b3bc5d5 ""
   "loss_plots/kashubian.pdf" 1652224967 14291 aa76266ee897ea775a24218bbbd2601d ""
   "neurips_2022.sty" 1652122747 11555 3bcd8a147ee27f39e8bc3cda450b9118 ""
-  "paper.aux" 1652228527 4987 5aa163789ace042d799bab9bde6cfb88 "pdflatex"
-  "paper.bbl" 1652228491 3751 3be6b112597d841f7ab67c3f12d2a7ea "bibtex paper"
-  "paper.out" 1652228527 1617 aa1edc0e890919073ad0e185cde91577 "pdflatex"
-  "paper.tex" 1652228527 19883 8017ad0c655751afaa90310c0d655d28 ""
+  "paper.aux" 1652296237 5367 b3ea0a463b7654a9dcad3ef85fd2b089 "pdflatex"
+  "paper.bbl" 1652295921 3751 3be6b112597d841f7ab67c3f12d2a7ea "bibtex paper"
+  "paper.out" 1652296237 1939 c4a8087571d1031ac778246d288b249b "pdflatex"
+  "paper.tex" 1652296236 23862 762d31cf8aeb4283d18e433c0308606b ""
   (generated)
   "paper.aux"
   "paper.log"

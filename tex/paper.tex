@@ -178,8 +178,21 @@
         \label{fig:lev}
       \end{figure}
   \section{Discussion}
+    \subsection{Analysis}
+      GAN based augmentation, using the techniques described, is not a good option for creating artificial training data for the inflection model. It seems as though 100 examples is simply insufficient for the GAN to learn properly. Though there was initially concern that GAN based augmentation could only produce redundant examples, providing no additional information, the fact that it results in worse inflection performance than using unaugmented data means that the GAN is providing novel, yet misleading, information.
+      
+      Observation of the artificial datasets reveals obvious flaws in the distribution of characters. For example, in the case of Azeri, the GAN augmented dataset contains 165 ``ü'' characters per 100 examples, while the unaugmented, randomly augmented, and trigram augmented datasets contain 44, 35, and 28 ``ü'' characters respectively. Similar flaws can be observed in the GAN augmented datasets for each language. These human-recognizable flaws could likely be averted using some sort of penalty based on relative character frequency in the training data, but there likely exist equally detrimental flaws that cannot be easily observed and would therefore be more difficult to penalize. The relative success of the trigram model suggests that many of these flaws can be avoided by using a less complex (or statistical) model that requires less data to function properly. However, given that random augmentation outperforms all other methods tested, it seems there is little reason to pursue such methods.
 
-  TODO: REMEMBER TO INCLUDE LINKS TO ALL CODE CREATED AND USED
+      Anastasopoulos and Neubig's method, random augmentation, remains the best method for creating informative yet nondeceptive artificial examples \cite{CMU}. The randomness indicates to the inflection model that the stem varies freely and has no bearing on the inflection. However, this is, of course, not always the case. Though many languages have ``regular'' inflectional paradigms (adding ``-ed'' for past tense in English), there are also many irregular forms, influenced by the stem (``run'' [+past] = ``ran''). In these cases, the stem must be taken into consideration to predict the correct inflectional morpheme. This means that an ideal informed (not entirely random) model should be able to produce more accurate and informative data than the random augmentor.
+
+    \subsection{Future Work}
+      Based on the conclusions above, there are two avenues of research that are begging to be pursued. The first involves modifying the task and model of Anastasopoulos and Neubig, 2019 \cite{CMU} to work only with the non-stem characters in each example (those which are not shared between the lemma and inflected form). Working on the assumptions made by random augmentation (that the stem has no bearing on inflection), such a model should perform similarly to one using random augmentation if it is trained for an equal number of iterations.
+      
+      The second avenue for future research involves rejecting the assumption made by random augmentation and instead assuming a finite number of inflectional paradigms, so that inflection may be turned into a classification task. Lemmas in the training set would first be categorized into paradigms; then, a classification model would be trained using only the lemmas as $X$ and the paradigm's ID as $y$. Each inflectional paradigm corresponds to a function $f(T)$ where $T$ is the set of morphological tags for the inflected form requested.
+
+    \subsection{Conclusion}
+      The emergence of new machine learning technologies are an opportunity to revisit attempts at low-resource language preservation and support. As language speakers and language learners, we know that a dataset of thousands of examples is not a necessary prerequistite for learning the inflectional paradigms of natural language. There is no doubt that small datasets like those used in the experiments above will one day be sufficient for inflection automation with human-like accuracy. 
+
+      TODO INCLUDE LINKS TO CODE ETC
   \bibliography{sources}
-
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.1.20)  10 MAY 2022 20:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.1.20)  11 MAY 2022 15:10
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -656,39 +656,42 @@ Underfull \vbox (badness 1694) has occurred while \output is active []
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
 
 pdfTeX warning: pdflatex (file ./architecture.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<architecture.pdf, id=108, 1331.4141pt x 331.86484pt>
+<architecture.pdf, id=120, 1331.4141pt x 331.86484pt>
 File: architecture.pdf Graphic file (type pdf)
 <use architecture.pdf>
 Package pdftex.def Info: architecture.pdf  used on input line 77.
 (pdftex.def)             Requested size: 397.48499pt x 99.07408pt.
 [3 <./architecture.pdf>]
-<loss_plots/kashubian.pdf, id=140, 433.62pt x 289.08pt>
+<loss_plots/kashubian.pdf, id=152, 433.62pt x 289.08pt>
 File: loss_plots/kashubian.pdf Graphic file (type pdf)
 <use loss_plots/kashubian.pdf>
 Package pdftex.def Info: loss_plots/kashubian.pdf  used on input line 102.
 (pdftex.def)             Requested size: 158.9946pt x 105.99632pt.
-<loss_plots/azeri.pdf, id=141, 433.62pt x 289.08pt>
+<loss_plots/azeri.pdf, id=153, 433.62pt x 289.08pt>
 File: loss_plots/azeri.pdf Graphic file (type pdf)
 <use loss_plots/azeri.pdf>
 Package pdftex.def Info: loss_plots/azeri.pdf  used on input line 108.
 (pdftex.def)             Requested size: 158.9946pt x 105.99632pt.
- [4 <./loss_plots/kashubian.pdf> <./loss_plots/azeri.pdf>] (./paper.bbl [5]) [6] (./paper.aux)
+ [4 <./loss_plots/kashubian.pdf> <./loss_plots/azeri.pdf>] [5] (./paper.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]) [7] (./paper.aux)
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: AA1EDC0E890919073AD0E185CDE91577;1617.
+(rerunfilecheck)             Checksum: C4A8087571D1031AC778246D288B249B;1939.
  ) 
 Here is how much of TeX's memory you used:
- 16171 strings out of 478286
- 259070 string characters out of 5846727
- 599576 words of memory out of 5000000
- 33890 multiletter control sequences out of 15000+600000
- 508968 words of font info for 195 fonts, out of 8000000 for 9000
+ 16181 strings out of 478286
+ 259190 string characters out of 5846727
+ 599579 words of memory out of 5000000
+ 33893 multiletter control sequences out of 15000+600000
+ 509098 words of font info for 197 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,8n,77p,1161b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (6 pages, 358500 bytes).
+Output written on paper.pdf (7 pages, 364357 bytes).
 PDF statistics:
- 278 PDF objects out of 1000 (max. 8388607)
- 187 compressed objects within 2 object streams
- 45 named destinations out of 1000 (max. 500000)
- 40056 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 300 PDF objects out of 1000 (max. 8388607)
+ 207 compressed objects within 3 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 40080 words of extra memory for PDF output out of 42996 (max. 10000000)
 
