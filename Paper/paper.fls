@@ -1,8 +1,8 @@
-PWD /Users/isaac/Desktop/Machine Learning/Final Project/tex
+PWD /Users/isaac/Desktop/Machine Learning/Final Project/Paper
 INPUT /usr/local/texlive/2021/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/isaac/Desktop/Machine Learning/Final Project/tex/paper.tex
+INPUT /Users/isaac/Desktop/Machine Learning/Final Project/Paper/paper.tex
 OUTPUT paper.log
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls

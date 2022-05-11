@@ -39,7 +39,7 @@
     \subsection{Task}
       In 2019, Anastasopoulos and Neubig made waves with their multilingual morphological inflection model for low resource languages \cite{CMU} that they submitted to the SIGMORPHON 2019 shared task \cite{sigmorphon2019}. All models submitted were pretrained on high resource languages of similar ancestry to the target language, allowing many models to greatly exceed the performance of previous attempts at low-resource morphological inflection. However, what allowed Anastasopoulos and Neubig's model to outperform other submissions was its use of data ``hallucination''.
     
-      To perform this hallucination, they aligned the lemma with its inflected form, extracted the stem, and generated new artificial examples by replacing this stem with randomly generated strings (in the language's alphabet) of equal length.\footnote{The alignment process assumes that the lemma and inflected form share a common substring.} Though a seemingly haphazard method of data augmentation, this approach allowed for an additional 10\% accuracy, on average, when tested against versions of the model that only used cross-lingual transfer.
+      To perform this hallucination, they aligned the lemma with its inflected form, extracted the stem, and generated new artificial examples by replacing this stem with randomly generated strings (in the language's alphabet) of equal length.\footnote{The alignment process assumes that the lemma and inflected form share a common substring.} Though this random substitution may seem haphazard, the approach allowed for an additional 10\% accuracy, on average, when tested against versions of the model that only used cross-lingual transfer.
 
       Surely, a more well informed approach to stem generation would further improve the accuracy of the inflectional model. Given the demonstrated ability of GANs to produce photorealistic, yet completely contrived images, they are potentially ideal for such a task. The experiments detailed in this paper attempt to produce a technique for generating fake word stems that provide more relevant information to the inflectional model from Anastasopoulos and Neubig, 2019 \cite{CMU}, thereby increasing the accuracy of its inflections. By modeling the graphotactics of the target language using a GAN, it should be possible to produce strings that more accurately depict possible character sequences.
 
@@ -49,7 +49,7 @@
       Though GANs are most often applied to image data (as in the popular CycleGAN \cite{cyclegan}, StyleGAN \cite{stylegan}, and DiscoGAN \cite{discogan}), the same logic is also applicable to other types of data. For example, in 2017, Esteban et al. developed a pair of recurrent GANs which they applied to medical time series data \cite{rcgan}, and in 2016, Yu et al. developed a GAN architecture made specifically for sequences and language generation, utilizing techniques from reinforcement learning \cite{seqgan}.
 
     \subsection{GANs for Data Augmentation}
-      Although GANs are most popularly used for domain transfer, the same basic architecture is also a good candidate for a data augmentation strategy called hallucination in which new (fake) training examples based on a small number of existing (real) examples.
+      Although GANs are most popularly used for domain transfer, the same basic architecture is also a good candidate for a data augmentation strategy called hallucination in which new (fake) training examples are created based on a small number of existing (real) examples.
 
       Though theoretically, the addition of these fake examples should not improve the performance of a discriminative model (since they can be no more representative of the true distribution than the examples they are based on), an empirical study by Antoniou et al. observed accuracy improvements on multi-class classification of up to 13\% on benchmark low-resource datasets such as Omniglot \cite{antoniou}. These performance gains are supported by a fairly extensive body of similar evidence-based studies on GAN-based data augmentation in low-resource settings. These studies are, more often than not, concerned with medical imaging, in which segmentation is a more salient issue than classification.
 
@@ -61,7 +61,7 @@
   
   \section{Method}
     \subsection{Data Pipeline}
-      All language data used was sourced from the SIGMORPHON 2019 repository and was initially formatted according the the Unimorph schema. The data for each language was gathered from their respective Wikipedia. Only the ``train-low'' sets were used for training. These datasets has only 100 examples, with each containing a lemma (base form), an inflected form, and a list of the morphological categories associated with the inflected form.\footnote{Although the ``train-low'' sets do occasionally have 1000 examples, those corresponding to the languages used in this experiment have only 100.} 
+      All language data used was sourced from the SIGMORPHON 2019 repository and was initially formatted according the the Unimorph schema. The data for each language was gathered from their respective Wikipedia. Only the ``train-low'' sets were used for training. These datasets have only 100 examples, and each example contains a lemma (base form), an inflected form, and a list of the morphological categories associated with the inflected form.\footnote{Although the ``train-low'' sets do occasionally have 1000 examples, those corresponding to the languages used in this experiment have only 100.} 
     
       To produce training data for the GAN, base forms were aligned with inflected forms using a technique developed by Mans Hulden called Chinese restaurant process alignment \cite{crpalign}. Based on the alignment, a series of likely stems are generated using code from Anastasopoulos and Neubig, 2019 \cite{CMU}; as most of the languages tested use primarily suffixational inflection, the first of these ``likely'' stems was assumed to be the true stem and was included in the language's training set as an example of graphotactic compliance.
 
@@ -149,7 +149,7 @@
         \label{fig:accuracy}
       \end{figure}
 
-      On average Levenshtein distance calculations follow a similar pattern to that of model accuracy; however, this metric occasionally favors the models trained on trigram augmented data (Fig. \ref{fig:lev}). Additionally, in the case of North Frisian, a particularly difficult language to inflect (based on the accuracy results), the model trained on just the 100 original examples had a slightly lower average Levenshtein distnace.
+      On average Levenshtein distance calculations follow a similar pattern to that of model accuracy; however, this metric occasionally favors the models trained on trigram augmented data (Fig. \ref{fig:lev}). Additionally, in the case of North Frisian, a particularly difficult language to inflect (based on the accuracy results), the model trained on just the 100 original examples had a slightly lower average Levenshtein distance.
     
       \begin{figure}[H]
         \center
@@ -195,13 +195,20 @@
 
     \section*{Code and Data}
     \subsection*{Written}
+      All code can be found in this Github repo: \url{https://github.com/isaacwasserman/ml-final-project}.\\
+      \\Here are some files of particular importance:
+      \begin{enumerate}
+        \item GAN training notebook: \url{https://github.com/isaacwasserman/ml-final-project/blob/main/word_gan/word_gan.ipynb}
+        \item Augmentation script: \url{https://github.com/isaacwasserman/ml-final-project/blob/main/word_gan/augment_smart.py}
+        \item Augmented datasets: \url{https://github.com/isaacwasserman/ml-final-project/tree/main/inflection/augmented_data}
+      \end{enumerate}
     \subsection*{Referenced}
-    \begin{enumerate}
-      \item Code from Anastasopoulos and Neubig, 2019: \url{https://github.com/antonisa/inflection}
-      \item Stem alignment code from Mans Hulden: \url{https://github.com/mhulden/crpalign}
-      \item GAN training routine from Géron: \url{https://github.com/ageron/handson-ml2/blob/master/17_autoencoders_and_gans.ipynb}
-      \item Data for the SIGMORPHON 2019 shared task: \url{https://github.com/sigmorphon/2019}
-      \item Wasserstein loss implementation: \url{https://machinelearningmastery.com/how-to-implement-wasserstein-loss-for-generative-adversarial-networks}
-    \end{enumerate}
+      \begin{enumerate}
+        \item Code from Anastasopoulos and Neubig, 2019: \url{https://github.com/antonisa/inflection}
+        \item Stem alignment code from Mans Hulden: \url{https://github.com/mhulden/crpalign}
+        \item GAN training routine from Géron: \url{https://github.com/ageron/handson-ml2/blob/master/17_autoencoders_and_gans.ipynb}
+        \item Data for the SIGMORPHON 2019 shared task: \url{https://github.com/sigmorphon/2019}
+        \item Wasserstein loss implementation: \url{https://machinelearningmastery.com/how-to-implement-wasserstein-loss-for-generative-adversarial-networks}
+      \end{enumerate}
   \bibliography{sources}
 \end{document}
