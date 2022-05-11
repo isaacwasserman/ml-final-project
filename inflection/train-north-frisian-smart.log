@@ -1,9 +1,152 @@
-[dynet] random seed: 2167551004
+[dynet] random seed: 2205322591
 [dynet] allocating memory: 512MB
 [dynet] memory allocation done.
+Data lengths
+transfer-language 0 0 0
+test-language 10100 10100 10100
+dev 100 100 100
+test 100 100
+Characters: ['j', 'l', 'F', 'ö', 'n', 'V', ';', 'N', "'", '1', 'w', 'R', 'T', 'p', 'i', 'ä', 'C', 's', 'G', 'a', 'b', 'E', '2', 'P', 'L', 'd', 'f', 'å', 'o', 'h', '3', 'D', 'r', 'ü', 't', 'e', 'U', ' ', 'I', 'u', 'g', 'm', 'S', 'M', 'k', 'c', '<EOS>']
+Vocab size: 47
+All tags: ['V', 'PST', '1', 'IMP', 'FUT', 'PTCP', 'DU', 'SG', 'RMT', 'PFV', 'LGSPEC1', 'LGSPEC2', '2', 'PL', '3', 'IND', 'PRF', 'NFIN', 'PRS', '<NULL>']
+Tag vocab size: 20
+[lr=0.1 clips=1508 updates=2020] on 0: Epoch 0 : 15908.403623174876
+on 0: 	 COPY Accuracy: 0.94 average edit distance: 0.06
+on 0: Accuracy good enough, breaking
+Burning in north-frisian: |⚠︎                                       | (!) 0/100 [0%] in 44.7s (0.00/s) 
+[lr=0.1 clips=12603 updates=14188] on 0: Epoch  0  :  232072.24974622228
+on 0: 	 COPY Accuracy:  1.0  average edit distance:  0.0
+on 0: 	 TASK Accuracy:  0.0  average edit distance:  8.06
+[lr=0.1 clips=11339 updates=14197] on 1: Epoch  1  :  205778.38301580102
+on 1: 	 COPY Accuracy:  0.8  average edit distance:  0.25
+on 1: 	 TASK Accuracy:  0.0  average edit distance:  8.14
+[lr=0.1 clips=10855 updates=14174] on 2: Epoch  2  :  200636.98990087578
+on 2: 	 COPY Accuracy:  0.95  average edit distance:  0.05
+on 2: 	 TASK Accuracy:  0.0  average edit distance:  6.91
+[lr=0.1 clips=10562 updates=14059] on 3: Epoch  3  :  196545.1721323696
+on 3: 	 COPY Accuracy:  0.95  average edit distance:  0.05
+on 3: 	 TASK Accuracy:  0.0  average edit distance:  7.13
+[lr=0.1 clips=10325 updates=14253] on 4: Epoch  4  :  195735.19964450103
+on 4: 	 COPY Accuracy:  0.95  average edit distance:  0.05
+on 4: 	 TASK Accuracy:  0.0  average edit distance:  7.78
+[lr=0.1 clips=10137 updates=14178] on 5: Epoch  5  :  192444.7438730967
+on 5: 	 COPY Accuracy:  0.95  average edit distance:  0.05
+on 5: 	 TASK Accuracy:  0.0  average edit distance:  7.12
+[lr=0.1 clips=10091 updates=14105] on 6: Epoch  6  :  191280.83286294827
+on 6: 	 COPY Accuracy:  0.75  average edit distance:  0.25
+on 6: 	 TASK Accuracy:  0.0  average edit distance:  7.29
+[lr=0.1 clips=9981 updates=14222] on 7: Epoch  7  :  190361.44089470603
+on 7: 	 COPY Accuracy:  1.0  average edit distance:  0.0
+on 7: 	 TASK Accuracy:  0.0  average edit distance:  7.14
+[lr=0.1 clips=9843 updates=14199] on 8: Epoch  8  :  188460.70853255884
+on 8: 	 COPY Accuracy:  1.0  average edit distance:  0.0
+on 8: 	 TASK Accuracy:  0.0  average edit distance:  8.0
+[lr=0.1 clips=9689 updates=14148] on 9: Epoch  9  :  188875.81861232364
+on 9: 	 COPY Accuracy:  1.0  average edit distance:  0.0
+on 9: 	 TASK Accuracy:  0.0  average edit distance:  7.77
+on 9: Restarting the trainer with half the learning rate!
+[lr=0.05 clips=11948 updates=14055] on 10: Epoch  10  :  230897.74826235254
+on 10: 	 COPY Accuracy:  1.0  average edit distance:  0.0
+on 10: 	 TASK Accuracy:  0.0  average edit distance:  7.14
+[lr=0.05 clips=11291 updates=14161] on 11: Epoch  11  :  201849.16452167707
+on 11: 	 COPY Accuracy:  1.0  average edit distance:  0.0
+on 11: 	 TASK Accuracy:  0.0  average edit distance:  7.0
+[lr=0.05 clips=11087 updates=14024] on 12: Epoch  12  :  195651.2542521589
+on 12: 	 COPY Accuracy:  1.0  average edit distance:  0.0
+on 12: 	 TASK Accuracy:  0.0  average edit distance:  7.14
+[lr=0.05 clips=11097 updates=14205] on 13: Epoch  13  :  194990.04504567944
+on 13: 	 COPY Accuracy:  0.95  average edit distance:  0.05
+on 13: 	 TASK Accuracy:  0.0  average edit distance:  7.89
+[lr=0.05 clips=10977 updates=14096] on 14: Epoch  14  :  190825.13307169336
+on 14: 	 COPY Accuracy:  0.9  average edit distance:  0.2
+on 14: 	 TASK Accuracy:  0.0  average edit distance:  7.24
+[lr=0.05 clips=10863 updates=14230] on 15: Epoch  15  :  189339.08214817612
+on 15: 	 COPY Accuracy:  1.0  average edit distance:  0.0
+on 15: 	 TASK Accuracy:  0.0  average edit distance:  7.54
+[lr=0.05 clips=10836 updates=14135] on 16: Epoch  16  :  187092.80414263386
+on 16: 	 COPY Accuracy:  1.0  average edit distance:  0.0
+on 16: 	 TASK Accuracy:  0.0  average edit distance:  7.6
+on 16: Restarting the trainer with half the learning rate!
+Pretraining north-frisian: |████████████████⚠︎                       | (!) 16/40 [40%] in 10:49.5 (0.02/s) 
+Best dev accuracy after pre-training:  0.0
+Best dev lev distance after pre-training:  6.91
+on 0: Epoch  0  :  236424.29901462235
+[lr=0.1 clips=11280 updates=12087] on 0: 	 COPY Accuracy:  0.7  average edit distance:  0.65
+on 0: 	 TASK Accuracy:  0.0  average edit distance:  7.12
+on 1: Epoch  1  :  231681.52188619412
+[lr=0.1 clips=11061 updates=12083] on 1: 	 COPY Accuracy:  0.1  average edit distance:  2.45
+on 1: 	 TASK Accuracy:  0.0  average edit distance:  6.95
+on 2: Epoch  2  :  230711.38443054538
+[lr=0.1 clips=10886 updates=12209] on 2: 	 COPY Accuracy:  0.0  average edit distance:  3.55
+on 2: 	 TASK Accuracy:  0.0  average edit distance:  6.97
+on 3: Epoch  3  :  227181.7616300704
+[lr=0.1 clips=10521 updates=12078] on 3: 	 COPY Accuracy:  0.0  average edit distance:  4.85
+on 3: 	 TASK Accuracy:  0.0  average edit distance:  7.14
+on 4: Epoch  4  :  229612.22426174209
+[lr=0.1 clips=10617 updates=12152] on 4: 	 COPY Accuracy:  0.0  average edit distance:  4.65
+on 4: 	 TASK Accuracy:  0.0  average edit distance:  7.1
+on 5: Epoch  5  :  228418.9261003174
+[lr=0.1 clips=10595 updates=12181] on 5: 	 COPY Accuracy:  0.0  average edit distance:  3.9
+on 5: 	 TASK Accuracy:  0.0  average edit distance:  7.21
+on 6: Epoch  6  :  226739.47268664464
+[lr=0.1 clips=10380 updates=12161] on 6: 	 COPY Accuracy:  0.0  average edit distance:  4.65
+on 6: 	 TASK Accuracy:  0.0  average edit distance:  6.95
+on 6: Restarting the trainer with half the learning rate!
+on 7: Epoch  7  :  267993.3869776875
+[lr=0.05 clips=11705 updates=12148] on 7: 	 COPY Accuracy:  0.0  average edit distance:  4.85
+on 7: 	 TASK Accuracy:  0.0  average edit distance:  7.23
+on 8: Epoch  8  :  233842.69856079295
+[lr=0.05 clips=11328 updates=12148] on 8: 	 COPY Accuracy:  0.0  average edit distance:  4.85
+on 8: 	 TASK Accuracy:  0.0  average edit distance:  7.23
+on 9: Epoch  9  :  228982.2636326272
+[lr=0.05 clips=11217 updates=12109] on 9: 	 COPY Accuracy:  0.0  average edit distance:  5.15
+on 9: 	 TASK Accuracy:  0.0  average edit distance:  7.23
+on 10: Epoch  10  :  223531.87377883866
+[lr=0.05 clips=11029 updates=12088] on 10: 	 COPY Accuracy:  0.0  average edit distance:  4.45
+on 10: 	 TASK Accuracy:  0.0  average edit distance:  7.07
+on 11: Epoch  11  :  220680.64566063136
+[lr=0.05 clips=11031 updates=12143] on 11: 	 COPY Accuracy:  0.0  average edit distance:  4.7
+on 11: 	 TASK Accuracy:  0.0  average edit distance:  7.14
+on 12: Epoch  12  :  219067.548969293
+[lr=0.05 clips=10944 updates=12110] on 12: 	 COPY Accuracy:  0.0  average edit distance:  6.8
+on 12: 	 TASK Accuracy:  0.0  average edit distance:  8.03
+on 13: Epoch  13  :  217700.72077350318
+[lr=0.05 clips=10916 updates=12101] on 13: 	 COPY Accuracy:  0.0  average edit distance:  4.5
+on 13: 	 TASK Accuracy:  0.0  average edit distance:  7.14
+on 13: Restarting the trainer with half the learning rate!
+Finetuning (1) north-frisian: |█████████████⚠︎                          | (!) 13/40 [32%] in 8:06.5 (0.03/s) 
+on 0: Epoch  0  :  197777.4649080895
+[lr=0.05 clips=9472 updates=10100] on 0: 	 COPY Accuracy:  0.0  average edit distance:  6.15
+on 0: 	 TASK Accuracy:  0.0  average edit distance:  7.84
+on 0: Restarting the trainer with half the learning rate!
+on 1: Epoch  1  :  249524.4149302505
+[lr=0.025 clips=10095 updates=10100] on 1: 	 COPY Accuracy:  0.0  average edit distance:  5.4
+on 1: 	 TASK Accuracy:  0.0  average edit distance:  7.6
+on 2: Epoch  2  :  218159.68745017052
+[lr=0.025 clips=10100 updates=10100] on 2: 	 COPY Accuracy:  0.0  average edit distance:  6.9
+on 2: 	 TASK Accuracy:  0.0  average edit distance:  7.97
+on 3: Epoch  3  :  210874.86284947395
+[lr=0.025 clips=10095 updates=10100] on 3: 	 COPY Accuracy:  0.0  average edit distance:  6.35
+on 3: 	 TASK Accuracy:  0.0  average edit distance:  7.77
+on 4: Epoch  4  :  206837.62791609764
+[lr=0.025 clips=10070 updates=10100] on 4: 	 COPY Accuracy:  0.0  average edit distance:  6.15
+on 4: 	 TASK Accuracy:  0.0  average edit distance:  7.33
+on 5: Epoch  5  :  204052.81221473217
+[lr=0.025 clips=10061 updates=10100] on 5: 	 COPY Accuracy:  0.0  average edit distance:  6.9
+on 5: 	 TASK Accuracy:  0.0  average edit distance:  7.88
+on 6: Epoch  6  :  202114.66335201263
+[lr=0.025 clips=10038 updates=10100] on 6: 	 COPY Accuracy:  0.0  average edit distance:  7.05
+on 6: 	 TASK Accuracy:  0.0  average edit distance:  8.04
+on 7: Epoch  7  :  201810.3283713162
+[lr=0.025 clips=10003 updates=10100] on 7: 	 COPY Accuracy:  0.0  average edit distance:  7.2
+on 7: 	 TASK Accuracy:  0.0  average edit distance:  7.88
+on 7: Restarting the trainer with half the learning rate!
+Finetuning (2) north-frisian: |███████⚠︎                                | (!) 7/40 [18%] in 3:40.7 (0.03/s) 
 Traceback (most recent call last):
-  File "/Users/isaac/Desktop/Machine Learning/Final Project/inflection/inflection.py", line 203, in <module>
-    hall_i, hall_o, hall_t = myutil.read_data(HALL_PATH)
-  File "/Users/isaac/Desktop/Machine Learning/Final Project/inflection/myutil.py", line 35, in read_data
-    tags.append(re.split('\W+', l[2]))
-IndexError: list index out of range
+  File "/Users/isaac/Desktop/Machine Learning/Final Project/inflection/inflection.py", line 1513, in <module>
+    trainer2, best_acc, best_edd = train_simple_attention_with_tags(inflection_model, low_i, low_t, low_o, None, True, trainer, best_acc, best_edd)
+  File "/Users/isaac/Desktop/Machine Learning/Final Project/inflection/inflection.py", line 1478, in train_simple_attention_with_tags
+    inf_model.model.populate(os.path.join(MODEL_DIR, MODEL_NAME+"acc.model"))
+  File "_dynet.pyx", line 1461, in _dynet.ParameterCollection.populate
+  File "_dynet.pyx", line 1516, in _dynet.ParameterCollection.populate_from_textfile
+RuntimeError: Could not read model from ./models/north-frisian/orig.hall.acc.model

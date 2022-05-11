@@ -1,9 +1,113 @@
-[dynet] random seed: 2396688731
+[dynet] random seed: 2572053750
 [dynet] allocating memory: 512MB
 [dynet] memory allocation done.
-Traceback (most recent call last):
-  File "/Users/isaac/Desktop/Machine Learning/Final Project/inflection/inflection.py", line 203, in <module>
-    hall_i, hall_o, hall_t = myutil.read_data(HALL_PATH)
-  File "/Users/isaac/Desktop/Machine Learning/Final Project/inflection/myutil.py", line 35, in read_data
-    tags.append(re.split('\W+', l[2]))
-IndexError: list index out of range
+Data lengths
+transfer-language 0 0 0
+test-language 10100 10100 10100
+dev 100 100 100
+test 100 100
+Characters: ['N', 'n', 'I', 'ک', 'ۍ', 'ب', 'V', 'ښ', 'ډ', 'ز', 'S', 'D', 'U', 'o', 'L', 'F', 'ل', ';', 'J', 'C', 'G', 'ر', '3', 'ۀ', '2', 'ټ', 'ت', 'پ', 'M', 'ج', 'و', 'ړ', 'A', 'ږ', 'ش', 'O', ' ', 'ن', 'ا', 'ی', 'P', 'د', 'ى', 'س', 'غ', 'ﺉ', 'ځ', 'T', 'ڼ', 'ك', 'ې', 'ي', 'R', '1', 'ه', 'E', 'څ', 'ئ', 'خ', 'م', 'ګ', 'چ', 'ژ', '<EOS>']
+Vocab size: 64
+All tags: ['N', 'PST', 'ADJ', 'V', 'NOM', 'PRS', 'PL', '2', '3', 'IPFV', 'PFV', 'LGSPEC2', 'FEM', 'LGSPEC1', 'MASC', 'FUT', '1', 'VOC', 'SG', 'non', '<NULL>']
+Tag vocab size: 21
+[lr=0.1 clips=1369 updates=2020] on 0: Epoch 0 : 16726.72295319289
+on 0: 	 COPY Accuracy: 0.95 average edit distance: 0.07
+on 0: Accuracy good enough, breaking
+Burning in pashto: |⚠︎                                       | (!) 0/100 [0%] in 41.3s (0.00/s) 
+[lr=0.1 clips=11623 updates=14119] on 0: Epoch  0  :  251570.8347888207
+on 0: 	 COPY Accuracy:  0.85  average edit distance:  0.25
+on 0: 	 TASK Accuracy:  0.01  average edit distance:  5.07
+[lr=0.1 clips=8929 updates=14084] on 1: Epoch  1  :  221839.81450036413
+on 1: 	 COPY Accuracy:  0.9  average edit distance:  0.15
+on 1: 	 TASK Accuracy:  0.01  average edit distance:  5.25
+[lr=0.1 clips=8280 updates=14184] on 2: Epoch  2  :  214438.90775061195
+on 2: 	 COPY Accuracy:  1.0  average edit distance:  0.0
+on 2: 	 TASK Accuracy:  0.04  average edit distance:  4.99
+[lr=0.1 clips=8002 updates=14096] on 3: Epoch  3  :  211018.0882444989
+on 3: 	 COPY Accuracy:  0.9  average edit distance:  0.1
+on 3: 	 TASK Accuracy:  0.02  average edit distance:  5.37
+[lr=0.1 clips=8166 updates=14219] on 4: Epoch  4  :  209237.20294165684
+on 4: 	 COPY Accuracy:  0.9  average edit distance:  0.1
+on 4: 	 TASK Accuracy:  0.01  average edit distance:  5.38
+[lr=0.1 clips=7916 updates=14033] on 5: Epoch  5  :  207594.08547635734
+on 5: 	 COPY Accuracy:  0.95  average edit distance:  0.05
+on 5: 	 TASK Accuracy:  0.02  average edit distance:  4.98
+[lr=0.1 clips=8016 updates=14080] on 6: Epoch  6  :  206419.21179613905
+on 6: 	 COPY Accuracy:  1.0  average edit distance:  0.0
+on 6: 	 TASK Accuracy:  0.02  average edit distance:  5.18
+[lr=0.1 clips=8001 updates=14070] on 7: Epoch  7  :  205176.44887255365
+on 7: 	 COPY Accuracy:  0.9  average edit distance:  0.15
+on 7: 	 TASK Accuracy:  0.02  average edit distance:  5.07
+[lr=0.1 clips=8344 updates=14214] on 8: Epoch  8  :  204916.85372736826
+on 8: 	 COPY Accuracy:  0.95  average edit distance:  0.1
+on 8: 	 TASK Accuracy:  0.02  average edit distance:  5.36
+[lr=0.1 clips=8409 updates=14162] on 9: Epoch  9  :  204769.39280300148
+on 9: 	 COPY Accuracy:  1.0  average edit distance:  0.0
+on 9: 	 TASK Accuracy:  0.01  average edit distance:  5.2
+on 9: Restarting the trainer with half the learning rate!
+[lr=0.05 clips=7678 updates=14142] on 10: Epoch  10  :  203172.26631223934
+on 10: 	 COPY Accuracy:  0.95  average edit distance:  0.1
+on 10: 	 TASK Accuracy:  0.04  average edit distance:  4.81
+[lr=0.05 clips=8217 updates=14033] on 11: Epoch  11  :  200528.72041081186
+on 11: 	 COPY Accuracy:  0.95  average edit distance:  0.05
+on 11: 	 TASK Accuracy:  0.01  average edit distance:  5.2
+[lr=0.05 clips=8505 updates=14103] on 12: Epoch  12  :  198019.88455502826
+on 12: 	 COPY Accuracy:  0.95  average edit distance:  0.05
+on 12: 	 TASK Accuracy:  0.02  average edit distance:  4.9
+[lr=0.05 clips=8897 updates=14208] on 13: Epoch  13  :  197483.19882450634
+on 13: 	 COPY Accuracy:  0.9  average edit distance:  0.2
+on 13: 	 TASK Accuracy:  0.02  average edit distance:  5.08
+[lr=0.05 clips=9188 updates=14146] on 14: Epoch  14  :  195795.74579879967
+on 14: 	 COPY Accuracy:  0.95  average edit distance:  0.05
+on 14: 	 TASK Accuracy:  0.02  average edit distance:  4.85
+[lr=0.05 clips=9598 updates=14212] on 15: Epoch  15  :  194953.904272314
+on 15: 	 COPY Accuracy:  1.0  average edit distance:  0.0
+on 15: 	 TASK Accuracy:  0.02  average edit distance:  5.53
+[lr=0.05 clips=9914 updates=14183] on 16: Epoch  16  :  194024.50132784745
+on 16: 	 COPY Accuracy:  1.0  average edit distance:  0.0
+on 16: 	 TASK Accuracy:  0.02  average edit distance:  5.09
+[lr=0.05 clips=10146 updates=14101] on 17: Epoch  17  :  193995.66379700374
+on 17: 	 COPY Accuracy:  1.0  average edit distance:  0.0
+on 17: 	 TASK Accuracy:  0.03  average edit distance:  5.11
+on 17: Restarting the trainer with half the learning rate!
+Pretraining pashto: |█████████████████⚠︎                      | (!) 17/40 [42%] in 10:23.6 (0.03/s) 
+Best dev accuracy after pre-training:  0.04
+Best dev lev distance after pre-training:  4.81
+on 0: Epoch  0  :  226371.6832239904
+[lr=0.1 clips=9315 updates=12074] on 0: 	 COPY Accuracy:  0.9  average edit distance:  0.2
+on 0: 	 TASK Accuracy:  0.02  average edit distance:  5.16
+on 1: Epoch  1  :  225611.3052621046
+[lr=0.1 clips=8826 updates=12097] on 1: 	 COPY Accuracy:  0.95  average edit distance:  0.15
+on 1: 	 TASK Accuracy:  0.02  average edit distance:  5.16
+on 2: Epoch  2  :  225659.68463386002
+[lr=0.1 clips=8721 updates=12130] on 2: 	 COPY Accuracy:  0.4  average edit distance:  1.85
+on 2: 	 TASK Accuracy:  0.01  average edit distance:  5.0
+on 3: Epoch  3  :  227630.73059842933
+[lr=0.1 clips=8943 updates=12091] on 3: 	 COPY Accuracy:  0.3  average edit distance:  1.9
+on 3: 	 TASK Accuracy:  0.01  average edit distance:  5.22
+on 4: Epoch  4  :  225105.39491951923
+[lr=0.1 clips=8633 updates=12243] on 4: 	 COPY Accuracy:  0.0  average edit distance:  3.9
+on 4: 	 TASK Accuracy:  0.03  average edit distance:  4.81
+on 5: Epoch  5  :  223019.8958582832
+[lr=0.1 clips=8667 updates=12147] on 5: 	 COPY Accuracy:  0.2  average edit distance:  3.8
+on 5: 	 TASK Accuracy:  0.02  average edit distance:  5.07
+on 6: Epoch  6  :  223777.31497543812
+[lr=0.1 clips=8730 updates=12069] on 6: 	 COPY Accuracy:  0.05  average edit distance:  4.25
+on 6: 	 TASK Accuracy:  0.03  average edit distance:  5.27
+on 6: Restarting the trainer with half the learning rate!
+on 7: Epoch  7  :  222002.49136660178
+[lr=0.05 clips=6789 updates=12077] on 7: 	 COPY Accuracy:  0.85  average edit distance:  0.25
+on 7: 	 TASK Accuracy:  0.01  average edit distance:  5.42
+on 8: Epoch  8  :  220207.38112789916
+[lr=0.05 clips=7385 updates=12200] on 8: 	 COPY Accuracy:  0.95  average edit distance:  0.05
+on 8: 	 TASK Accuracy:  0.02  average edit distance:  5.05
+on 9: Epoch  9  :  217874.19673965417
+[lr=0.05 clips=7693 updates=12129] on 9: 	 COPY Accuracy:  0.95  average edit distance:  0.05
+on 9: 	 TASK Accuracy:  0.04  average edit distance:  4.89
+on 10: Epoch  10  :  215941.29013204074
+[lr=0.05 clips=7713 updates=12080] on 10: 	 COPY Accuracy:  0.8  average edit distance:  0.3
+on 10: 	 TASK Accuracy:  0.02  average edit distance:  4.97
+on 11: Epoch  11  :  216334.44814083993
+[lr=0.05 clips=7918 updates=12174] on 11: 	 COPY Accuracy:  1.0  average edit distance:  0.0
+on 11: 	 TASK Accuracy:  0.03  average edit distance:  4.79
+libc++abi: terminating with uncaught exception of type std::runtime_error: Could not write model to ./models/pashto/orig.hall.edd.model

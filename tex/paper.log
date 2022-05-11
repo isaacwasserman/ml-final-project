@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.1.20)  9 MAY 2022 20:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.1.20)  10 MAY 2022 20:22
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -269,31 +269,238 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box51
 \@float@everytoks=\toks24
 \@floatcapt=\box52
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks25
+\verbatim@line=\toks26
+\verbatim@in@stream=\read2
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count281
+\lst@gtempboxa=\box53
+\lst@token=\toks27
+\lst@length=\count282
+\lst@currlwidth=\dimen167
+\lst@column=\count283
+\lst@pos=\count284
+\lst@lostspace=\dimen168
+\lst@width=\dimen169
+\lst@newlines=\count285
+\lst@lineno=\count286
+\lst@maxwidth=\dimen170
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count287
+\lst@skipnumbers=\count288
+\lst@framebox=\box54
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2021/12/21 4.1b verbatim text (tvz,hv)
+\FV@CodeLineNo=\count289
+\FV@InFile=\read3
+\FV@TabBox=\box55
+\c@FancyVerbLine=\count290
+\FV@StepNumber=\count291
+\FV@OutFile=\write3
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/pmboxdraw/pmboxdraw.sty
+Package: pmboxdraw 2019/12/05 v1.4 Poor man's box drawing characters (HO)
+Now handling font encoding pmboxdraw ...
+... processing UTF-8 mapping file for font encoding pmboxdraw
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/pmboxdraw/pmboxdrawenc.dfu
+File: pmboxdrawenc.dfu 2019/12/05 v1.4 UTF-8 support for box drawing characters
+   defining Unicode char U+2500 (decimal 9472)
+   defining Unicode char U+2501 (decimal 9473)
+   defining Unicode char U+2502 (decimal 9474)
+   defining Unicode char U+2503 (decimal 9475)
+   defining Unicode char U+250C (decimal 9484)
+   defining Unicode char U+250D (decimal 9485)
+   defining Unicode char U+250E (decimal 9486)
+   defining Unicode char U+250F (decimal 9487)
+   defining Unicode char U+2510 (decimal 9488)
+   defining Unicode char U+2511 (decimal 9489)
+   defining Unicode char U+2512 (decimal 9490)
+   defining Unicode char U+2513 (decimal 9491)
+   defining Unicode char U+2514 (decimal 9492)
+   defining Unicode char U+2515 (decimal 9493)
+   defining Unicode char U+2516 (decimal 9494)
+   defining Unicode char U+2517 (decimal 9495)
+   defining Unicode char U+2518 (decimal 9496)
+   defining Unicode char U+2519 (decimal 9497)
+   defining Unicode char U+251A (decimal 9498)
+   defining Unicode char U+251B (decimal 9499)
+   defining Unicode char U+251C (decimal 9500)
+   defining Unicode char U+251D (decimal 9501)
+   defining Unicode char U+251E (decimal 9502)
+   defining Unicode char U+251F (decimal 9503)
+   defining Unicode char U+2520 (decimal 9504)
+   defining Unicode char U+2521 (decimal 9505)
+   defining Unicode char U+2522 (decimal 9506)
+   defining Unicode char U+2523 (decimal 9507)
+   defining Unicode char U+2524 (decimal 9508)
+   defining Unicode char U+252C (decimal 9516)
+   defining Unicode char U+252D (decimal 9517)
+   defining Unicode char U+252E (decimal 9518)
+   defining Unicode char U+252F (decimal 9519)
+   defining Unicode char U+2530 (decimal 9520)
+   defining Unicode char U+2531 (decimal 9521)
+   defining Unicode char U+2532 (decimal 9522)
+   defining Unicode char U+2533 (decimal 9523)
+   defining Unicode char U+2534 (decimal 9524)
+   defining Unicode char U+2535 (decimal 9525)
+   defining Unicode char U+2536 (decimal 9526)
+   defining Unicode char U+2537 (decimal 9527)
+   defining Unicode char U+2538 (decimal 9528)
+   defining Unicode char U+2539 (decimal 9529)
+   defining Unicode char U+253A (decimal 9530)
+   defining Unicode char U+253B (decimal 9531)
+   defining Unicode char U+253C (decimal 9532)
+   defining Unicode char U+253D (decimal 9533)
+   defining Unicode char U+253E (decimal 9534)
+   defining Unicode char U+253F (decimal 9535)
+   defining Unicode char U+2540 (decimal 9536)
+   defining Unicode char U+2541 (decimal 9537)
+   defining Unicode char U+2542 (decimal 9538)
+   defining Unicode char U+2543 (decimal 9539)
+   defining Unicode char U+2544 (decimal 9540)
+   defining Unicode char U+2545 (decimal 9541)
+   defining Unicode char U+2546 (decimal 9542)
+   defining Unicode char U+2547 (decimal 9543)
+   defining Unicode char U+2548 (decimal 9544)
+   defining Unicode char U+2549 (decimal 9545)
+   defining Unicode char U+254A (decimal 9546)
+   defining Unicode char U+254B (decimal 9547)
+   defining Unicode char U+2550 (decimal 9552)
+   defining Unicode char U+2551 (decimal 9553)
+   defining Unicode char U+2552 (decimal 9554)
+   defining Unicode char U+2553 (decimal 9555)
+   defining Unicode char U+2554 (decimal 9556)
+   defining Unicode char U+2555 (decimal 9557)
+   defining Unicode char U+2556 (decimal 9558)
+   defining Unicode char U+2557 (decimal 9559)
+   defining Unicode char U+2558 (decimal 9560)
+   defining Unicode char U+2559 (decimal 9561)
+   defining Unicode char U+255A (decimal 9562)
+   defining Unicode char U+255B (decimal 9563)
+   defining Unicode char U+255C (decimal 9564)
+   defining Unicode char U+255D (decimal 9565)
+   defining Unicode char U+255E (decimal 9566)
+   defining Unicode char U+255F (decimal 9567)
+   defining Unicode char U+2560 (decimal 9568)
+   defining Unicode char U+2561 (decimal 9569)
+   defining Unicode char U+2562 (decimal 9570)
+   defining Unicode char U+2563 (decimal 9571)
+   defining Unicode char U+2564 (decimal 9572)
+   defining Unicode char U+2565 (decimal 9573)
+   defining Unicode char U+2566 (decimal 9574)
+   defining Unicode char U+2567 (decimal 9575)
+   defining Unicode char U+2568 (decimal 9576)
+   defining Unicode char U+2569 (decimal 9577)
+   defining Unicode char U+256A (decimal 9578)
+   defining Unicode char U+256B (decimal 9579)
+   defining Unicode char U+256C (decimal 9580)
+   defining Unicode char U+2574 (decimal 9588)
+   defining Unicode char U+2575 (decimal 9589)
+   defining Unicode char U+2576 (decimal 9590)
+   defining Unicode char U+2577 (decimal 9591)
+   defining Unicode char U+2578 (decimal 9592)
+   defining Unicode char U+2579 (decimal 9593)
+   defining Unicode char U+257A (decimal 9594)
+   defining Unicode char U+257B (decimal 9595)
+   defining Unicode char U+257C (decimal 9596)
+   defining Unicode char U+257D (decimal 9597)
+   defining Unicode char U+257E (decimal 9598)
+   defining Unicode char U+257F (decimal 9599)
+   defining Unicode char U+2580 (decimal 9600)
+   defining Unicode char U+2581 (decimal 9601)
+   defining Unicode char U+2582 (decimal 9602)
+   defining Unicode char U+2583 (decimal 9603)
+   defining Unicode char U+2584 (decimal 9604)
+   defining Unicode char U+2585 (decimal 9605)
+   defining Unicode char U+2586 (decimal 9606)
+   defining Unicode char U+2587 (decimal 9607)
+   defining Unicode char U+2588 (decimal 9608)
+   defining Unicode char U+2589 (decimal 9609)
+   defining Unicode char U+258A (decimal 9610)
+   defining Unicode char U+258B (decimal 9611)
+   defining Unicode char U+258C (decimal 9612)
+   defining Unicode char U+258D (decimal 9613)
+   defining Unicode char U+258E (decimal 9614)
+   defining Unicode char U+258F (decimal 9615)
+   defining Unicode char U+2590 (decimal 9616)
+   defining Unicode char U+2591 (decimal 9617)
+   defining Unicode char U+2592 (decimal 9618)
+   defining Unicode char U+2593 (decimal 9619)
+   defining Unicode char U+2594 (decimal 9620)
+   defining Unicode char U+2595 (decimal 9621)
+   defining Unicode char U+2596 (decimal 9622)
+   defining Unicode char U+2597 (decimal 9623)
+   defining Unicode char U+2598 (decimal 9624)
+   defining Unicode char U+2599 (decimal 9625)
+   defining Unicode char U+259A (decimal 9626)
+   defining Unicode char U+259B (decimal 9627)
+   defining Unicode char U+259C (decimal 9628)
+   defining Unicode char U+259D (decimal 9629)
+   defining Unicode char U+259E (decimal 9630)
+   defining Unicode char U+259F (decimal 9631)
+)
+\pmbd@W=\dimen171
+\pmbd@H=\dimen172
+\pmbd@L=\dimen173
+\pmbd@Thin=\dimen174
+\pmbd@Thick=\dimen175
+\pmbd@Sep=\dimen176
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen177
+\captionmargin@=\dimen178
+\captionwidth=\dimen179
+\caption@tempdima=\dimen180
+\caption@indent=\dimen181
+\caption@parindent=\dimen182
+\caption@hangindent=\dimen183
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count292
+\c@continuedfloat=\count293
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+)
+\c@subfigure=\count294
+\c@subtable=\count295
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count281
-\l__pdf_internal_box=\box53
+\l__color_backend_stack_int=\count296
+\l__pdf_internal_box=\box56
 ) (./paper.aux)
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for pmboxdraw/pmboxdraw/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -361,7 +568,7 @@ LaTeX Font Info:    ... okay on input line 26.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 26.
+Package hyperref Info: Link coloring OFF on input line 32.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -369,27 +576,27 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count282
+\c@section@level=\count297
 )
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
+LaTeX Info: Redefining \ref on input line 32.
+LaTeX Info: Redefining \pageref on input line 32.
+LaTeX Info: Redefining \nameref on input line 32.
  (./paper.out) (./paper.out)
-\@outlinefile=\write3
-\openout3 = `paper.out'.
+\@outlinefile=\write4
+\openout4 = `paper.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 26.
-Package microtype Info: Applying patch `item' on input line 26.
-Package microtype Info: Applying patch `toc' on input line 26.
-Package microtype Info: Applying patch `eqnum' on input line 26.
-Package microtype Info: Applying patch `footnote' on input line 26.
+LaTeX Info: Redefining \microtypecontext on input line 32.
+Package microtype Info: Applying patch `item' on input line 32.
+Package microtype Info: Applying patch `toc' on input line 32.
+Package microtype Info: Applying patch `eqnum' on input line 32.
+Package microtype Info: Applying patch `footnote' on input line 32.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 26.
+LaTeX Info: Redefining \showhyphens on input line 32.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -397,38 +604,42 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 ) (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count283
-\scratchdimen=\dimen167
-\scratchbox=\box54
-\nofMPsegments=\count284
-\nofMParguments=\count285
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count286
-\MPscratchDim=\dimen168
-\MPnumerator=\count287
-\makeMPintoPDFobject=\count288
-\everyMPtoPDFconversion=\toks26
+\scratchcounter=\count298
+\scratchdimen=\dimen184
+\scratchbox=\box57
+\nofMPsegments=\count299
+\nofMParguments=\count300
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count301
+\MPscratchDim=\dimen185
+\MPnumerator=\count302
+\makeMPintoPDFobject=\count303
+\everyMPtoPDFconversion=\toks29
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-)) (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+))
+\c@lstlisting=\count304
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 29.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 35.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -436,38 +647,48 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+
+Underfull \vbox (badness 1694) has occurred while \output is active []
+
  [1
 
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
 
 pdfTeX warning: pdflatex (file ./architecture.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<architecture.pdf, id=98, 1331.4141pt x 331.86484pt>
+<architecture.pdf, id=108, 1331.4141pt x 331.86484pt>
 File: architecture.pdf Graphic file (type pdf)
 <use architecture.pdf>
-Package pdftex.def Info: architecture.pdf  used on input line 71.
+Package pdftex.def Info: architecture.pdf  used on input line 77.
 (pdftex.def)             Requested size: 397.48499pt x 99.07408pt.
-[3pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.81       T
-            he strings produced by the resultant models were, unfortunately,... <./architecture.pdf>] (./paper.bbl [4]) [5] (./paper.aux)
+[3 <./architecture.pdf>]
+<loss_plots/kashubian.pdf, id=140, 433.62pt x 289.08pt>
+File: loss_plots/kashubian.pdf Graphic file (type pdf)
+<use loss_plots/kashubian.pdf>
+Package pdftex.def Info: loss_plots/kashubian.pdf  used on input line 102.
+(pdftex.def)             Requested size: 158.9946pt x 105.99632pt.
+<loss_plots/azeri.pdf, id=141, 433.62pt x 289.08pt>
+File: loss_plots/azeri.pdf Graphic file (type pdf)
+<use loss_plots/azeri.pdf>
+Package pdftex.def Info: loss_plots/azeri.pdf  used on input line 108.
+(pdftex.def)             Requested size: 158.9946pt x 105.99632pt.
+ [4 <./loss_plots/kashubian.pdf> <./loss_plots/azeri.pdf>] (./paper.bbl [5]) [6] (./paper.aux)
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: F1267D5CB21A7848E6D03DE933167E6C;1383.
+(rerunfilecheck)             Checksum: AA1EDC0E890919073AD0E185CDE91577;1617.
  ) 
 Here is how much of TeX's memory you used:
- 12583 strings out of 478286
- 199751 string characters out of 5846727
- 533851 words of memory out of 5000000
- 30359 multiletter control sequences out of 15000+600000
- 508448 words of font info for 187 fonts, out of 8000000 for 9000
+ 16171 strings out of 478286
+ 259070 string characters out of 5846727
+ 599576 words of memory out of 5000000
+ 33890 multiletter control sequences out of 15000+600000
+ 508968 words of font info for 195 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,8n,76p,1161b,482s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,8n,77p,1161b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (5 pages, 300434 bytes).
+Output written on paper.pdf (6 pages, 358500 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 154 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
- 40030 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 278 PDF objects out of 1000 (max. 8388607)
+ 187 compressed objects within 2 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 40056 words of extra memory for PDF output out of 42996 (max. 10000000)
 

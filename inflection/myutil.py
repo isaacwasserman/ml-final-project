@@ -32,7 +32,7 @@ def read_data(filename):
         if l:
             inputs.append(list(l[0]))
             outputs.append(list(l[1]))
-            tags.append(re.split('\W+', l[2]))
+            tags.append(re.split('\W+', l[-1]))
     return inputs, outputs, tags
 
 def read_test_data(filename):

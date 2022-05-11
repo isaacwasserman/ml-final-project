@@ -11,6 +11,12 @@
 \usepackage{xcolor}         % colors
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{verbatim}
+\usepackage{listings}
+\usepackage{fancyvrb}
+\usepackage{pmboxdraw}
+\usepackage{subcaption}
+
 \bibliographystyle{plain}
 
 \title{Modeling the Graphotactics of Low-Resource Languages Using Sequential GANs}
@@ -35,7 +41,7 @@
     
       To perform this hallucination, they aligned the lemma with its inflected form, extracted the stem, and generated new artificial examples by replacing this stem with randomly generated strings (in the language's alphabet) of equal length.\footnote{The alignment process assumes that the lemma and inflected form share a common substring.} Though a seemingly haphazard method of data augmentation, this approach allowed for an additional 10\% accuracy, on average, when tested against versions of the model that only used cross-lingual transfer.
 
-      Surely, a more well informed approach to stem generation would further improve the accuracy of the inflectional model. Given the demonstrated ability of GANs to produce photorealistic, yet completely contrived images, they are potentially ideal for such a task.
+      Surely, a more well informed approach to stem generation would further improve the accuracy of the inflectional model. Given the demonstrated ability of GANs to produce photorealistic, yet completely contrived images, they are potentially ideal for such a task. The experiments detailed in this paper attempt to produce a technique for generating fake word stems that provide more relevant information to the inflectional model from Anastasopoulos and Neubig, 2019 \cite{CMU}, thereby increasing the accuracy of its inflections. By modeling the graphotactics of the target language using a GAN, it should be possible to produce strings that more accurately depict possible character sequences.
 
     \subsection{Generative Adversarial Networks}
       Generative adversarial networks are a class of unsupervised machine learning architectures, most commonly used for image generation. These networks consist of a generator and a discriminator that are trained simultaneously on a set of data representing a class or domain; this domain could be anything from photos of human faces to time series of hourly temperatures.\footnote{Technically speaking, the generator and discriminator are most often trained one after another on a repeated basis.} The generator is tasked with producing ``fake'' examples that are within this domain without ever seeing any real examples from the training set. Meanwhile, the discriminator is fed a combination of fake examples (from the generator) and real examples and is tasked with classifying them as real or fake. The respective goals of the generator and discriminator constitute a zero-sum game, in which the generator is constantly trying to outsmart the discriminator, while the discriminator hones its ability to distinguish between in-domain and out-of-domain examples.
@@ -55,9 +61,9 @@
   
   \section{Method}
     \subsection{Data Pipeline}
-      All language data used was sourced from the SIGMORPHON 2019 repository and was initially formatted according the the Unimorph schema. The data for each language was gathered from their respective Wikipedia. Only the "train-low" sets were used for training. These datasets has only 100 examples, with each containing a lemma (base form), an inflected form, and a list of the morphological categories associated with the inflected form.\footnote{Although the "train-low" sets do occasionally have 1000 examples, those corresponding to the languages used in this experiment have only 100.} 
+      All language data used was sourced from the SIGMORPHON 2019 repository and was initially formatted according the the Unimorph schema. The data for each language was gathered from their respective Wikipedia. Only the ``train-low'' sets were used for training. These datasets has only 100 examples, with each containing a lemma (base form), an inflected form, and a list of the morphological categories associated with the inflected form.\footnote{Although the ``train-low'' sets do occasionally have 1000 examples, those corresponding to the languages used in this experiment have only 100.} 
     
-      To produce training data for the GAN, base forms were aligned with inflected forms using a technique developed by Mans Hulden called Chinese restaurant process alignment \cite{crpalign}. Based on the alignment, a series of likely stems are generated using code from Anastasopoulos and Neubig, 2019 \cite{CMU}; as most of the languages tested use primarily suffixational inflection, the first of these "likely" stems was assumed to be the true stem and was included in the language's training set as an example of graphotactic compliance.
+      To produce training data for the GAN, base forms were aligned with inflected forms using a technique developed by Mans Hulden called Chinese restaurant process alignment \cite{crpalign}. Based on the alignment, a series of likely stems are generated using code from Anastasopoulos and Neubig, 2019 \cite{CMU}; as most of the languages tested use primarily suffixational inflection, the first of these ``likely'' stems was assumed to be the true stem and was included in the language's training set as an example of graphotactic compliance.
 
       Non-alphabetic symbols, such as punctuation, numerals, and spaces were removed from each stem. Although the very small training sets provided by SIGMORPHON were likely hand gathered, the data was not free of anomolous examples. While attempting to gauge the model's behavior on a familiar language, it was found that the English dataset contained extremely uncommon characters such as ``æ'', ``é'', ``ë'', ``ö'', and ``œ''; however, it was decided that was not necessary to exclude these characters, as the model should recognize their infrequency, even in a dataset of only 100 examples.
 
@@ -78,14 +84,102 @@
     \subsection{Augmentation and Output Cleaning}
       The resultant models were each used to produce 10,000 artificial training examples. This process involved a modified version of the augmentation script from Anastasopoulos and Neubig, 2019 \cite{CMU}.
       
-      The strings produced by the resultant models were, unfortunately, not always of the correct shape. Some had zeroes (representing null characters) in the middle, others filled the entire 10 available characters (which most real stems do not). To combat this, model output strings were "cleaned". Strings were cut off at the first zero from the left (all languages were left-to-right), if a character was repeated more than twice consecutively, it was collapsed to just two, and if the length of the stem was longer than the real stem it was replacing, it was shortened to a matching length. 
+      The strings produced by the resultant models were, unfortunately, not always of the correct shape. Some had zeroes (representing null characters) in the middle, others filled the entire 10 available characters (which most real stems do not). To combat this, model output strings were ``cleaned''. Strings were cut off at the first zero from the left (all languages were left-to-right), if a character was repeated more than twice consecutively, it was collapsed to just two, and if the length of the stem was longer than the real stem it was replacing, it was shortened to a matching length. 
 
     \subsection{Testing}
+      The inflectional model from Anastasopoulos and Neubig, 2019 \cite{CMU} was used as a benchmark. For each language, three sets of ``hallucinated'' data were generated. The first used the random character selection method from Anastasopoulos and Neubig, 2019 \cite{CMU}, the second was the GAN produced set, and the third was produced by a simple trigram model trained on same 100 example as the GAN.
+
+      The model was run without cross-lingual transfer. All other parameters were left at their defaults. The number of epochs used by the training routine varied programmatically according to perceived accuracy.
 
   \section{Results}
+    \subsection{GAN Training}
+      Models generally fell into two camps when training. With some, the generator loss quickly rose to 1 (the maximum) while the discriminator loss simultaneously fell to -1 (the minimum) (Fig. \ref{fig:kashubianloss}). With the others, generator loss fluctuated rapidly between 0 and 1, while the discriminator loss fluctuated rapidly between -1 and 0 (Fig. \ref{fig:azeriloss}).
+
+      \begin{figure}[H]
+        \centering
+        \begin{subfigure}{.5\textwidth}
+          \centering
+          \includegraphics[width=0.8\linewidth]{loss_plots/kashubian.pdf}
+          \caption{Loss pattern 1}
+          \label{fig:kashubianloss}
+        \end{subfigure}%
+        \begin{subfigure}{.5\textwidth}
+          \centering
+          \includegraphics[width=0.8\linewidth]{loss_plots/azeri.pdf}
+          \caption{Loss pattern 2}
+          \label{fig:azeriloss}
+        \end{subfigure}
+        \caption{Examples of each loss pattern}
+        \label{fig:loss}
+      \end{figure}
+      
+      In the first case, it seems that the model is learning for the first few epochs but quickly exhausts its potential. This is evident in the sample strings generated as well. As an example, for the first 100 or so epochs, the Kashubian model generated strings that were mostly a single character: ``şşşşşşşşşş''. But after about 300 epochs, string began to resemble stems with a reasonable number of zeroes (null characters) at the end: ``dümç000000''.
+
+      In the second case, the model is able to return to these more realistically structured strings occcasionally (denoted by the fluctuations), but it is not able to produce these strings with any consistency.
+
+    \subsection{Performance}
+      Neither the GAN nor the trigram model were able to consistently produce data that was more informative than the random strings (Fig. \ref{fig:accuracy}). For all languages except North Frisian and Occitan, training on the randomly augmented set resulted in the highest accuracy. The models trained on the trigram augmented set often performed similarly to those trained on the random set, having identical accuracy in Occitan and slighly higher accuracy in North Frisian.
+
+      No model trained on GAN augmented data achieved higher than 18\% accuracy, and in 10 of 13 cases, these models were less than 10\% accurate. In all cases, training on the 100 example ``train-low'' set alone resulted in a more accurate model than training on both the ``train-low'' and GAN augmented sets; on average, adding GAN augmented data resulted in a model that was only one fifth as accurate as models trained on unuagmented data.
+
+      \begin{figure}[H]
+        \center
+        \begin{tabular}{lrrrr}
+          \toprule
+          Language & Unaugmented & Random & Trigram & GAN \\
+          \midrule
+          Azeri & 0.10 & \textbf{0.31} & 0.25 & 0.00 \\
+          Bengali & 0.25 & \textbf{0.56} & 0.55 & 0.03 \\
+          Crimean Tatar & 0.21 & \textbf{0.63} & 0.62 & 0.11 \\
+          Karelian & 0.34 & \textbf{0.54} & 0.38 & 0.02 \\
+          Kashubian & 0.46 & \textbf{0.56} & 0.30 & 0.14 \\
+          Livonian & 0.12 & \textbf{0.32} & 0.26 & 0.07 \\
+          Maltese & 0.24 & \textbf{0.32} & 0.19 & 0.00 \\
+          Middle High German & 0.62 & \textbf{0.68} & 0.66 & 0.18 \\
+          North Frisian & 0.15 & 0.16 & \textbf{0.19} & 0.00 \\
+          Occitan & 0.26 & \textbf{0.78} & \textbf{0.78} & 0.01 \\
+          Old Church Slavonic & 0.24 & \textbf{0.44} & 0.21 & 0.08 \\
+          Pashto & 0.10 & \textbf{0.40} & 0.36 & 0.03\\
+          Tatar & 0.27 & \textbf{0.71} & 0.61 & 0.03\\
+          \midrule
+          Average & 0.26 & \textbf{0.49} & 0.41 & 0.05\\
+          \bottomrule
+        \end{tabular}
+        \caption{Accuracy of resultant inflectional models using various data augmentation methods}
+        \label{fig:accuracy}
+      \end{figure}
+
+      On average Levenshtein distance calculations follow a similar pattern to that of model accuracy; however, this metric occasionally favors the models trained on trigram augmented data (Fig. \ref{fig:lev}). Additionally, in the case of North Frisian, a particularly difficult language to inflect (based on the accuracy results), the model trained on just the 100 original examples had a slightly lower average Levenshtein distnace.
+    
+      \begin{figure}[H]
+        \center
+        \begin{tabular}{lrrrr}
+          \toprule
+          Language & Unaugmented & Random & Trigram & GAN \\
+          \midrule
+          Azeri & 3.13 & \textbf{1.76} & 2.02 & 5.42 \\
+          Bengali & 2.66 & \textbf{0.81} & 0.95 & 4.59 \\
+          Crimean Tatar & 2.34 & 0.54 & \textbf{0.50} & 3.18 \\
+          Karelian & 1.74 & 1.94 & \textbf{1.46} & 4.10 \\
+          Kashubian & 1.44 & \textbf{1.22} & \textbf{1.22} & 2.78 \\
+          Livonian & 3.91 & \textbf{2.23} & 2.55 & 4.78 \\
+          Maltese & 2.31 & \textbf{1.51} & 1.91 & 5.29 \\
+          Middle High German & 0.80 & \textbf{0.46} & 0.60 & 1.92 \\
+          North Frisian & \textbf{3.12} & 3.21 & 3.54 & 7.88 \\
+          Occitan & 2.19 & \textbf{0.53} & 0.57 & 5.78 \\
+          Old Church Slavonic & 2.34 & \textbf{1.09} & 1.94 & 3.00 \\
+          Pashto & 2.53 & \textbf{1.25} & 1.34 & 4.79\\
+          Tatar & 2.19 & \textbf{0.50} & 0.62 & 5.52\\
+          \midrule
+          Average & 2.36 & \textbf{1.31} & 1.48 & 4.54\\
+          \bottomrule
+        \end{tabular}
+        \caption{Average Levenshtein distance (minimum number of elementary string operations to go from prediction to label) of resultant inflectional models using various data augmentation methods}
+        \label{fig:lev}
+      \end{figure}
   \section{Discussion}
 
-  REMEMBER TO INCLUDE LINKS TO ALL CODE CREATED AND USED
+  TODO: REMEMBER TO INCLUDE LINKS TO ALL CODE CREATED AND USED
   \bibliography{sources}
 
 \end{document}
